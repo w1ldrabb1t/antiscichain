@@ -37,9 +37,30 @@ p.68
 
 > "Systems subject to randomness - and unpredictability - build a mechanism beyond the robust to opportunistically reinvent themselves each generation, with a continuous change of population and species."
 
+p.71
+> "When you are fragile, you __depend__ on things following the exact planned course, with as little deviation as possible - for deviations are more harmful than helpful. This is why the fragile needs to be very predictive in its approach, and, conversely, predictive systems __cause__ fragility. When you __want__ deviations, and yuou do't care about the possible dispersion of outcomes that the future can bring, since most will be helpful, you are antifragile."
+
+> "using error as a source of information. If every trial provides you with information about __what does not work__, you start zooming in on a solution - so every attempt becomes more valuable, more like an expense than an error."
+This the key of antifragile learning!
+
+Antifragile learning aims not to reduce the number of mistakes or errors - *it aims to learn from them*, even if the new found knowledge is about what does not work.
+
+Antifragile learning is not concerned about being certain of how things work - *it's primary focus is on self-correcting as fast as possible towards an increasingly more accurate knowledge base*. 
+
+Antifragile learning embraces the fact that *knowledge is fragile*. Having said that, the process of improving one's knowledge can be made to be antifragile, if we systematically improve our understanding of how a system works by both via negativa (what does not work) and via positiva (what seems to work) - while leaving the door open for refutation to come in.
+
+Antifragile learning creates a stark contrast with how the education system works and, notoriously, how modern scientific research, especially if said research is heavily sponsored by profit oriented companies and organizations looking to find evidence that their products work by doing no harm (looking for evidence of absense!). 
+
+The education system and scientific research is very linear (and fragile) because their primary focus is summarized by:
+1. the less mistakes you make, the better you are
+2. learning is about recalling answers to known problems
+3. the more evidence you get that something works, the more certain you are that it does work
+
+
+
 
 p.418
-> "The tragedy is that it is very hard to get funding to replicat - and reject - existing studies. And even if there were money for it, it would be hard to find takers: trying to replicate studies will not make anyone a hero."
+> "The tragedy is that it is very hard to get funding to replicate - and reject - existing studies. And even if there were money for it, it would be hard to find takers: trying to replicate studies will not make anyone a hero."
 
 p.417
 > "There is an optionality on the part of the researcher, no different from that of a banker. The researcher gets the upside, truth gets the downside. The researcher's free option is in *his ability to pick what statistics can confirm his belief - or show a good result - and ditch the rest*. He has the option to stop once he has the __right__ result."
