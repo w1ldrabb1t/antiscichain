@@ -1,0 +1,9 @@
+So on anti-fragile learning, we are not concerned about not being wrong because we
+understand that that's impossible. So on the other hand, we are more concerned
+about the cost of being wrong. So errors and mistakes can't be evaluated in a
+vacuum. We need to understand what is the cost of being wrong and this comes back
+again to the topic of ruin and complexity of systems. For the sake of simplicity,
+let's assume that we're always talking about complex systems unless I say
+otherwise explicitly. And in complex systems, oftentimes the cost of being
+wrong can be catastrophic. But again, this comes back to the to the exposure
+of ruin. And that's it for now.
