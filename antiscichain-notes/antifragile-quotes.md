@@ -47,16 +47,23 @@ Antifragile learning aims not to reduce the number of mistakes or errors - *it a
 
 Antifragile learning is not concerned about being certain of how things work - *it's primary focus is on self-correcting as fast as possible towards an increasingly more accurate knowledge base*. 
 
-Antifragile learning embraces the fact that *knowledge is fragile*. Having said that, the process of improving one's knowledge can be made to be antifragile, if we systematically improve our understanding of how a system works by both via negativa (what does not work) and via positiva (what seems to work) - while leaving the door open for refutation to come in.
+Antifragile learning embraces the fact that *knowledge is fragile*.
+More on [Knowledge is Fragile](knowledge-is-fragile.md)
 
-Antifragile learning creates a stark contrast with how the education system works and, notoriously, how modern scientific research, especially if said research is heavily sponsored by profit oriented companies and organizations looking to find evidence that their products work by doing no harm (looking for evidence of absense!). 
+While knowledge is fragile, *the process of improving one's knowledge can be made to be antifragile*!
+By systematically improving our understanding of how a system works by both via negativa (what does not work) and via positiva (what seems to work) - while leaving the door open for refutation to come in and prove us wrong.
+
+*Antifragile learning creates a stark contrast with how the education system works and, notoriously, how modern scientific research works*, especially if said research is heavily sponsored by profit oriented companies and organizations looking to find evidence that their products work by doing no harm (looking for evidence of absense!). 
 
 The education system and scientific research is very linear (and fragile) because their primary focus is summarized by:
 1. the less mistakes you make, the better you are
 2. learning is about recalling answers to known problems
-3. the more evidence you get that something works, the more certain you are that it does work
+3. focus on being right (confirmation bias)
 
-
+Antifragile learning or, better yet, antifragile knowledge generation systems are the polar opposite:
+1. it welcomes mistakes because they are a source of not only confirmation that something doesn't work but also a source of unexpected solutions to problems we were not necessarily looking to solve
+2. learning is about seeking answers to new, unknown and, often times, unexpected problems
+3. focus on systematically improving our knowledge base
 
 
 p.418
