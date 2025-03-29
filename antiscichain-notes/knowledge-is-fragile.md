@@ -80,3 +80,10 @@ It's like the phrase that is often attributed to Dwight D. Eisenhower says - "pl
 Just like in our case, *knowledge loses its power and becomes obsolete the moment you stop learning*.
 
 Our version of Dwight D. Eisenhower's famous phrase would then be "knowledge is useless, but learning is everything!"
+
+## To sum it up
+While knowledge is fragile, *the process of improving one's knowledge can be made to be antifragile*!
+By systematically improving our understanding of how a system works by both via negativa (what does not work) and via positiva (what seems to work) - while leaving the door open for refutation to come in and
+ prove us wrong.
+
+This is what [Antifragile Learning](antifragile-learning.md) is all about.
