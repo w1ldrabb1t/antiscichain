@@ -41,30 +41,23 @@ p.71
 > "When you are fragile, you __depend__ on things following the exact planned course, with as little deviation as possible - for deviations are more harmful than helpful. This is why the fragile needs to be very predictive in its approach, and, conversely, predictive systems __cause__ fragility. When you __want__ deviations, and yuou do't care about the possible dispersion of outcomes that the future can bring, since most will be helpful, you are antifragile."
 
 > "using error as a source of information. If every trial provides you with information about __what does not work__, you start zooming in on a solution - so every attempt becomes more valuable, more like an expense than an error."
-This the key of antifragile learning!
+This the key to [antifragile learning](antifragile-learning.md)!
 
-Antifragile learning aims not to reduce the number of mistakes or errors - *it aims to learn from them*, even if the new found knowledge is about what does not work.
+p.72
+> "we are talking of partial, not general, mistakes, small, not severe and terminal ones. This creates *a separation between good and bad systems*. Good systems such as airlines ar eset up to have small errors, independent from each other - or, in effect, negatively correlated to each other, since mistakes lower the odds of future mistakes. If every plane crash makes the next one less likely, every bank crash  makes the next one more likely. *We need to eliminate the second type of error - the one that produces contagion.*"
 
-Antifragile learning is not concerned about being certain of how things work - *it's primary focus is on self-correcting as fast as possible towards an increasingly more accurate knowledge base*. 
+p.76
+> "What did not kill me __did not__ make me stronger, but spared me __because__ I am stronger than others; but it killed others and the *average population is now stronger because the weak are gone*."
 
-Antifragile learning embraces the fact that *knowledge is fragile*.
-More on [Knowledge is Fragile](knowledge-is-fragile.md)
+p.85
+> "*Nature loves small errors* (without which genetic variations are impossible), humans don't - hence when you rely on human judgement you are at the mercy of a mental bias that disfavors antifragility. So, alas, we humans are afraid of the second type of variability and navively fragilize systems - or prevent their antifragility - by protecting them. In other words, *this avoidance of small mistakes makes the large ones more severe*."
 
-While knowledge is fragile, *the process of improving one's knowledge can be made to be antifragile*!
-By systematically improving our understanding of how a system works by both via negativa (what does not work) and via positiva (what seems to work) - while leaving the door open for refutation to come in and prove us wrong.
-
-*Antifragile learning creates a stark contrast with how the education system works and, notoriously, how modern scientific research works*, especially if said research is heavily sponsored by profit oriented companies and organizations looking to find evidence that their products work by doing no harm (looking for evidence of absense!). 
-
-The education system and scientific research is very linear (and fragile) because their primary focus is summarized by:
-1. the less mistakes you make, the better you are
-2. learning is about recalling answers to known problems
-3. focus on being right (confirmation bias)
-
-Antifragile learning or, better yet, antifragile knowledge generation systems are the polar opposite:
-1. it welcomes mistakes because they are a source of not only confirmation that something doesn't work but also a source of unexpected solutions to problems we were not necessarily looking to solve
-2. learning is about seeking answers to new, unknown and, often times, unexpected problems
-3. focus on systematically improving our knowledge base
-
+p.87
+> "This great variety of people and their wallets are there, in Switzerland, for its shelter, safety and stability. But all these refugees don't notice the obvious: *the most stable country in the world __does not have a government__*. And it is not stable in spite of not having a government; it is stable __because__ it does have one. (...) This bottom-up dorm of dictatorship provides protection against the romanticism of utopias, since no big ideas can be generated in such an intellectual atmosphere."
+This is a very important point to support the reason why my platform does now have a governing body (eg. DAO).
+The platform and its value should stand on its own legs.
+Having no goverment in my case means no possibility of bias or corruption.
+The trust must come from knowing how the system works (it's open source) and the fact that the technology will execute the code that was programmed with exactly as it should.
 
 p.418
 > "The tragedy is that it is very hard to get funding to replicate - and reject - existing studies. And even if there were money for it, it would be hard to find takers: trying to replicate studies will not make anyone a hero."
@@ -77,4 +70,4 @@ p.417
 - This might be tolerable if the consequences of putting their theory, system or product in practice, only impacts themselves (#skininthegame)
 - The problem becomes when the consequences can harm others (ruin scale) and how much harm is going to be inflicted on them (ruin impact)
 
-  
+
