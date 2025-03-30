@@ -14,7 +14,8 @@
     urlcolor=blue,
     citecolor=blue
 }
-\title{Anti-Fragile Scientific Knowledge Chain: The Epistemology Behind the ASB Protocol}
+
+\title{Anti-Fragile Scientific Knowledge Blockchain: The Epistemology Behind the ASB Protocol}
 \author{Bruno Coelho}
 \date{2025}
 
@@ -22,8 +23,16 @@
 \maketitle
 
 \begin{abstract}
-Scientific truth should be determined by the weight and structure of evidence over time, not by popularity, reputation, or consensus. The Antifragile Science Blockchain (ASB) protocol encodes scientific credibility as a function of an evolving evidence graph rather than votes or status. This paper articulates the philosophical foundations of ASB, drawing on Karl Popper's principle of falsifiability and Nassim Nicholas Taleb's concepts of antifragility and \emph{skin in the game}. We argue that falsification attempts (the discovery of the proverbial "black swan") provide greater epistemic value than routine confirmations, and thus ASB rewards refutation more heavily than replication. We contrast this evidence-driven approach with consensus-based and reputation-based methods of scientific validation, highlighting the dangers of treating scientific truth as a democratic process. By utilizing an open, censorship-resistant publication model and weighting citation links via Decisive Evidence Weighting (DEW), the ASB protocol creates a self-correcting system that is robust to misinformation and echo chambers. 
+Scientific truth should be determined by the weight and structure of evidence, most notably refutation (\emph{via negativa}) over time, not by popularity, reputation, or consensus. 
+The Antifragile Science Blockchain (ASB) protocol encodes scientific credibility as a function of an evolving evidence graph rather than votes or status. 
+This paper articulates the philosophical foundations of ASB, drawing on Karl Popper's principle of falsifiability and Nassim Nicholas Taleb's concepts of antifragility and \emph{skin in the game}. We argue that falsification or refutation attempts ("not all swans are white") provide greater epistemic value than looking for evidence that something works, especially in complex non-linear response systems. 
+In this paper I present ASB - a knowledge generation system that rewards refutation (more) than replication. I contrast this evidence-driven approach with consensus-based and reputation-based methods of scientific validation, highlighting the dangers of treating scientific truth as a democratic process. By utilizing an open, censorship-resistant publication model and weighting citation links via Event Fragility Score (EFS), the ASB protocol creates a self-correcting system that is robust to misinformation and echo chambers. 
 \end{abstract}
+
+\section*{Preamble}
+\textit{GitHub Repository:} \url{https://github.com/w1ldrabb1t/antiscichain}\\
+
+\textit{This paper was initially authored by a single contributor. However, the use of “we” throughout reflects its collaborative intent. The document is published under the GPLv3 license in a public GitHub repository and welcomes contributions from the broader community via pull requests. Readers are invited to critique, extend, or refactor the ideas presented herein.}
 
 \section{Introduction}
 Galileo Galilei reputedly remarked that \emph{``in questions of science, the authority of a thousand is not worth the humble reasoning of a single individual.''}\footnote{Often attributed to Galileo's \emph{Dialogue Concerning the Two Chief World Systems} (1632). See, e.g., Arago's \emph{Eulogy of Galileo} (1874) for this quote.} This sentiment underscores that scientific truth is not a matter of majority rule. Yet, many modern mechanisms for evaluating information---from social media upvotes to academic citation counts---implicitly rely on some form of consensus or popularity. If enough people \emph{agree} that a statement is true, it tends to be treated as true. Such approaches carry the risk of elevating well-liked ideas over correct but unpopular ones. History offers plenty of examples where the scientific consensus was later overturned by a single, robust counter-example or a maverick discovery.
@@ -32,7 +41,7 @@ In the digital era, the challenges of discerning truth are amplified by informat
 
 The Antifragile Science Blockchain (ASB) protocol takes a different approach. Instead of polling opinions or deferring to reputations, ASB measures credibility through an \emph{evidence graph} of scientific publications. Each paper or claim is a node, and directed links (citations) carry semantic weight indicating whether the cited result is being supported or challenged. By analyzing this evolving graph of evidence, ASB aims to quantify how well a claim has survived experimental tests over time. In essence, credibility emerges from the \emph{structure of evidence}, not the number of people who believe it.
 
-This paper articulates the epistemological foundations behind ASB and contrasts it with consensus-based and reputation-based approaches to scientific validation. In \S2, we discuss the philosophical underpinnings of our approach, drawing on Karl Popper's principle of falsifiability and Nassim Nicholas Taleb's concepts of ``antifragility`` and ``skin in the game.'' Section~3 outlines the design of the ASB protocol, explaining how papers form a citation network weighted by a Decisive Evidence Weighting (DEW) scheme to calculate credibility scores. In \S4, we compare this evidence-driven model to systems based on consensus or reputation and examine the dangers those systems face. Section~5 then discusses how an open, censorship-resistant evidence graph allows ASB to remain robust against misinformation and echo chambers, essentially becoming \emph{antifragile}---improving its knowledge quality through challenges. Finally, \S6 concludes with reflections on how ``truth without consensus'' can guide the future of decentralized scientific knowledge infrastructure.
+This paper articulates the epistemological foundations behind ASB and contrasts it with consensus-based and reputation-based approaches to scientific validation. In \S2, we discuss the philosophical underpinnings of our approach, drawing on Karl Popper's principle of falsifiability and Nassim Nicholas Taleb's concepts of ``antifragility`` and ``skin in the game.'' Section~3 outlines the design of the ASB protocol, explaining how papers form a citation network weighted by a Event Fragility Score (EFS) scheme to calculate credibility scores. In \S4, we compare this evidence-driven model to systems based on consensus or reputation and examine the dangers those systems face. Section~5 then discusses how an open, censorship-resistant evidence graph allows ASB to remain robust against misinformation and echo chambers, essentially becoming \emph{antifragile}---improving its knowledge quality through challenges. Finally, \S6 concludes with reflections on how ``truth without consensus'' can guide the future of decentralized scientific knowledge infrastructure.
 
 \section{Core Concepts}
 
@@ -88,17 +97,7 @@ Meanwhile, the survivor of the experiment above would believe that he knows the 
 
 \subsubsection{Trust me - it works for me, right here, right now}
 
-Imagine that you were challenged to go inside a maze and find the way out as fast as you can.
-
-You think about drawing a map of the maze and you go through it, carefully documenting every dead end along the way.
-
-Finally you found the exit and you see someone else about to go inside the maze. You ask them if they want the map you just drawn. They said yes and thanked you for saving them time.
-
-There was just one small problem... Without you being aware, the maze was actually constantly changing itself.
-
-This means that the map is worse than useless - it's misleading!
-
-The person you gave the map to would be better off without it. Now, they will probably spend more time figuring out what they are doing wrong since they think the map is surely accurate since you just got out.
+Imagine that you were challenged to go inside a maze and find the way out as fast as you can. You think about drawing a map of the maze and you go through it, carefully documenting every dead end along the way. Finally you found the exit and you see someone else about to go inside the maze. You ask them if they want the map you just drawn. They said yes and thanked you for saving them time. There was just one small problem... Without you being aware, the maze was actually constantly changing itself. This means that the map is worse than useless - it's misleading! The person you gave the map to would be better off without it. Now, they will probably spend more time figuring out what they are doing wrong since they think the map is surely accurate since you just got out.
 
 The point of this story is to use it so we can extrapolate some key fragile traits about knowledge: 
 \begin{itemize}
@@ -119,7 +118,7 @@ This is yet another story to illustrate that when systems are interdependent and
 
 \subsubsection{So what?}
 While knowledge is fragile, the process of \textbf{improving one's knowledge can be antifragile}!
-By systematically improving our understanding of how a system works by both via negativa (what does not work) and via positiva (what seems to work) - while leaving the door open for refutation to come in and prove us wrong.
+By systematically improving our understanding of how a system works by both \emph{via negativa} (what does not work) and \emph{via positiva} (what seems to work) - while leaving the door open for refutation to come in and prove us wrong.
 
 This is what the next section entitled Antifragile Learning expands on.
 
@@ -133,7 +132,7 @@ While knowledge is fragile, *the process of improving one's knowledge can be mad
 
 \subsection{What is unique about this approach}
 
-\textbf{Antifragile learning creates a stark contrast with how the education system works and, notoriously, how modern scientific research works}, especially if said research is heavily sponsored by profit oriented companies and organizations looking to find evidence that their products work by doing no harm (looking for evidence of absense!).
+\textbf{Antifragile learning creates a stark contrast with how the education system works and, notoriously, how modern scientific research works}, especially if said research is heavily sponsored by profit oriented companies and organizations looking to find evidence that their products work by doing no harm (looking for evidence of absense!). More on this in the chapter about Scientism.
 
 The education system and scientific research is very linear (and fragile) because their primary focus is summarized by:
 \begin{enumerate}
@@ -218,14 +217,55 @@ If you plot a 4x4 matrix, you will quickly realize that the top right quadrant i
 
 Even worse is when the cost of being wrong doesn't fall on the person making the claim. This is where skin in the game becomes essential. If I claim a biotech intervention is safe, but am not exposed to its possible failure — and others are — then I am transferring the cost of being wrong to them. That is unacceptable in an antifragile system.
 
-\section{Scientism - Scientific Absolutism Powered by Capitalism}
-Ultimately, with this platform, we want to end the Scientism which is scientific research being sponsored by for profit companies and organizations.
+\section{Scientism is not Science!}
+Ultimately, with this platform, we want to end the Scientism which is heavily based on scientific research being sponsored by for profit companies and organizations.
 
-Production of confirmation in service of profit is not science. This is scientism — a dogmatic belief in science-like signals (e.g., peer-reviewed publications, institutional consensus, statistical significance) as inherently trustworthy, while ignoring the structure of incentives behind them and silencing dissenting voices and research that refutes them.
+Production of confirmation in service of profit is not science - it is Scientism — a dogmatic belief in science-like signals (e.g., peer-reviewed publications, institutional consensus, statistical significance) as inherently trustworthy, while ignoring the structure of incentives behind them and silencing dissenting voices and research that refutes them.
 
-Here's some notable examples of Scientism in practice.
+\subsection{Iatrogenisis or Iatrogenics}
 
-\subsection{The Opioid Epidemic – Purdue Pharma and the Illusion of Safety}
+``Medicine has known about iatrogenics since at least the 4th century before our era - \emph{primum non nocere} (first to no harm) is a first principle attributed to Hippocrates and integrated in the so-called Hippocratic Oath taken by every medical doctor on his commencement day.''\cite{Taleb2012}
+
+In spite of that fact, there is ample evidence of multiple cases of Iatrogenisis. \cite{VarleyVarma2021}
+
+Here's some examples:
+
+\subsubsection{Ignaz Semmelweis and Handwashing}
+
+In the mid-19th century, Ignaz Semmelweis, a Hungarian physician, noticed that the mortality rate of women giving birth in hospitals was significantly higher than those attended by midwives at home. He suspected that  ``childbed fever'' (puerperal fever) was being transmitted by doctors who were not washing their hands after performing autopsies and before delivering babies.
+
+Despite evidence supporting his theory, the medical community largely rejected his ideas. It took years for the concept of handwashing to be widely accepted and for proper hygiene practices to be adopted, eventually leading to a significant reduction in infections.
+
+References: \cite{Semmelweis2006}
+
+\subsubsection{Thalidomide}
+In the late 1950s and early 1960s, thalidomide was a drug prescribed to pregnant women to alleviate morning sickness. However, it was later discovered that the drug caused severe birth defects, especially
+limb deformities, in newborns. The tragic outcome of thalidomide use highlighted the importance of rigorous testing for drug safety, especially during pregnancy, and led to significant changes in drug
+regulation and testing protocols.
+
+References: \cite{WGMcbride}
+
+\subsubsection{Diethylstilbestrol}
+Diethylstilbestrol was prescribed to pregnant women from the 1940s to the early 1970s to prevent miscarriages and complications during pregnancy. Decades later, it was found that daughters of these women
+had a higher risk of developing reproductive tract abnormalities and a rare form of vaginal cancer.
+
+References: \cite{Diethylstilbestrol2000}
+
+\subsubsection{Fen-Phen}
+Fen-Phen was a combination of two drugs, fenfluramine and phentermine, prescribed for weight loss in the 1990s. It was later discovered that fenfluramine could cause serious heart valve problems and primary
+pulmonary hypertension, leading to the withdrawal of the drug from the market.
+
+References: \cite{Wolff1997}
+
+\subsubsection{The polio vaccine (IPV) and The Cutter Incident in 1955}
+
+In April 1955 more than 200 000 children in five Western and mid-Western USA states received a polio vaccine in which the process of inactivating the live virus proved to be defective. Within days there were reports of paralysis and within a month the first mass vaccination programme against polio had to be abandoned. Subsequent investigations revealed that the vaccine, manufactured by the California-based family firm of Cutter Laboratories, had caused 40 000 cases of polio, leaving 200 children with varying degrees of paralysis and killing 10.
+
+References: \cite{Fitzpatrick2006}
+
+\subsection{Scientific Absolutism Powered by Capitalism}
+
+\subsubsection{The Opioid Epidemic – Purdue Pharma and the Illusion of Safety}
 
 Purdue Pharma aggressively marketed OxyContin as a safe, non-addictive painkiller, citing selectively crafted studies and physician testimonials. Internally, however, the company knew about the drug's addictive potential. It used industry-funded research, manipulated scientific claims, and influenced medical guidelines to downplay harm.
 
@@ -237,7 +277,7 @@ The cost of being wrong was catastrophic — and largely externalized. Purdue pa
 \cite{PBSPurduePharma}
 \cite{Alonso2021}
 
-\subsection{Glyphosate and Monsanto – “No Evidence of Harm” as a Weapon}
+\subsubsection{Glyphosate and Monsanto – “No Evidence of Harm” as a Weapon}
 
 Monsanto, now part of Bayer, developed glyphosate (marketed as Roundup) and ensured its widespread use in global agriculture. For years, Monsanto-funded studies claimed there was “no evidence” that glyphosate was carcinogenic.
 
@@ -252,7 +292,7 @@ This case exemplifies how scientific absolutism, powered by capital, can become 
 \cite{mindthegap2020}
 \cite{ehn2018}
 
-\subsection{Theranos – The Cult of Proof Without Validation}
+\subsubsection{Theranos – The Cult of Proof Without Validation}
 
 Theranos, the biotech startup founded by Elizabeth Holmes, promised revolutionary blood testing using a
 single drop of blood. Investors, media, and even regulatory bodies were convinced — not by open
@@ -295,6 +335,8 @@ The only way out is to realign scientific practice with antifragile principles:
 
 \section{The Antifragile Science Blockchain - ASB}
 
+\subsection{The Critical Role of the Blockchain}
+TO DO (??)
 
 \subsection{Falsifiability and the Primacy of Refutation}
 At the core of the ASB epistemology is Karl Popper's notion of \emph{falsifiability}\cite{Popper1963}. Popper argued that for a hypothesis to be scientific, it must be testable in a way that could potentially show it to be false. In his words, ``Every genuine test of a theory is an attempt to falsify it, or refute it''\cite{Popper1963}. Confirming instances of a theory can increase our confidence in it, but can never conclusively prove it true. By contrast, a single counter-example can definitively show a universal hypothesis to be false. Albert Einstein echoed this asymmetry: \emph{``No amount of experimentation can ever prove me right; a single experiment can prove me wrong.''}. The scientific method, ideally, is a process of bold conjectures and rigorous attempts at refutation.
@@ -316,69 +358,6 @@ The ASB protocol is explicitly designed to be antifragile in an epistemic sense.
 Another concept from Taleb's \emph{Incerto} is the idea of \emph{skin in the game}\cite{Taleb2018}. In domains of uncertainty, Taleb emphasizes that those who make decisions or assertions should face commensurate risks and consequences. Translated to science, this means that scientists (or their hypotheses) should bear downside risk if their claims turn out to be wrong. Traditional scientific practice enforces this only indirectly---a researcher who publishes incorrect findings might lose reputation, or a journal might issue a retraction. However, these consequences are often muted or delayed, and in some cases, flashy positive results are rewarded in the short term even if they don't hold up to scrutiny later.
 
 The ASB protocol can instantiate a form of skin in the game by directly tying a paper's enduring credibility to its claims' accuracy. If an author publishes a claim that later gets decisively refuted, that paper's ASB credibility score plummets, impacting the author's overall credibility profile in the system. In a sense, authors stake their reputation on each published result. A corollary is that producing strong evidence \emph{against} a claim (falsifying someone else's hypothesis) raises the credibility of the refuting paper and its authors. By making incorrect assertions carry an immediate penalty (loss of credibility points) and making correct refutations carry a reward, the system aligns incentives with the pursuit of truth. Scientists are encouraged to be more cautious with speculative claims (knowing they cannot simply ride on prestige if proven wrong) and more bold in challenging established ideas when they have solid evidence. This dynamic ensures that credibility is earned through \emph{skin in the game}: only those ideas that can withstand risk and adversity thrive in the long run.
-
-
-\subsection{Evidence Graph Model}
-In ASB, every research publication (or scientific claim) is represented as a node in a directed graph. We call this the \textbf{evidence graph}. An edge from node $B$ to node $A$ indicates that publication $B$ has cited publication $A$. However, unlike traditional citation indexes that do not distinguish the nature of the citation, ASB requires each citation to be annotated with its \emph{polarity}:
-\begin{itemize}
-    \item \textbf{Support}: If $B$'s findings \textit{support}, reproduce, or are consistent with the claims of $A$.
-    \item \textbf{Refute}: If $B$'s findings \textit{contradict}, falsify, or cast serious doubt on the claims of $A$.
-\end{itemize}
-Each node can thus accumulate incoming links of either type over time as new papers cite it. These links form chains of evidence: for example, a paper $C$ might support paper $B$ which in turn refuted paper $A$, creating a sequence of evidence relationships.
-
-Figure~\ref{fig:graph} illustrates a fragment of such an evidence graph. Each link is labeled as supporting (green arrow) or refuting (red arrow) evidence. This structure encodes not just which papers are connected, but the \emph{stance} of that connection, which is crucial for assessing credibility. A paper with many independent supporting replications will look very different in this graph from one that has attracted a well-substantiated refutation.
-
-Importantly, this evidence graph is intended to be \textbf{open and evolving}. Anyone can add a new node (publish a new result) that cites prior work with appropriate support/refute designations. There is no central authority deciding which evidence is allowed; instead, the network grows organically as knowledge progresses. The graph provides a living documentation of the state of scientific testing for each claim. As evidence accumulates, the structure of the graph tells the story of how that claim has stood up (or faltered) under scrutiny.
-
-\begin{figure}[h]
-\centering
-\begin{tikzpicture}[node distance=2.0cm and 2.5cm, every node/.style={draw, circle, fill=blue!5, minimum size=1cm, align=center}]
-\node (A) at (0,0) {A\\(Claim)};
-\node (B) at (-2,-2) {B\\(supports A)};
-\node (C) at (2,-2) {C\\(supports A)};
-\node (D) at (0,-4) {D\\(refutes A)};
-\node (E) at (0,-6) {E\\(supports D)};
-\draw[->, thick, green!60!black] (B) -- (A) node[midway, above, sloped]{\small supports};
-\draw[->, thick, green!60!black] (C) -- (A) node[midway, above, sloped]{\small supports};
-\draw[->, thick, red] (D) -- (A) node[midway, right]{\small refutes};
-\draw[->, thick, green!60!black] (E) -- (D) node[midway, right]{\small supports};
-\end{tikzpicture}
-\caption{Example evidence graph fragment. Node A represents an initial claim. Nodes B and C provide supporting evidence for A (green arrows). Node D provides a refuting evidence against A (red arrow). Node E supports the findings of D (i.e., replicates D's refutation of A). In the ASB system, this network of support and refutation relationships would be used to compute credibility scores for each node.}
-\label{fig:graph}
-\end{figure}
-
-\subsection{Decisive Evidence Weighting and Credibility Score}
-To quantify credibility from the evidence graph, ASB employs a scoring algorithm that we call \textbf{Decisive Evidence Weighting} (DEW). The core idea is to aggregate evidence in a weighted manner, giving more importance to evidence that is considered more epistemically decisive. In practice, this means:
-\begin{itemize}
-    \item Refutation links are assigned a higher weight (in absolute value) than supporting links. If paper $D$ refutes $A$, it will contribute a large negative impact to $A$'s score.
-    \item Supporting links add positive weight to the target's score, but each individual support typically counts for less than a refutation. Multiple independent confirmations are still valuable as they accumulate.
-    \item The weight of a link can also factor in the quality of the evidence. For example, a replication study with a large sample size or rigorous methodology might be given more weight than a preliminary observation. DEW can incorporate such factors (effect sizes, statistical significance, etc.) into the weight value.
-    \item Optionally, the current credibility of the citing paper can influence the weight. Intuitively, a refutation coming from a highly credible study might be more influential than one from an unproven source. This introduces a recursive element (a paper's score depends on others' scores), which can be resolved by iterative updates of the graph.
-\end{itemize}
-
-Each paper $P$ in the graph is assigned a credibility score $\text{ASB}(P)$ based on the weighted sum of evidence. At a high level, one can imagine a formula such as:
-\[ 
-\text{ASB}(P) = \sum_{i \in \text{Supports}(P)} w_i \;-\; \sum_{j \in \text{Refutations}(P)} v_j, 
-\] 
-where $w_i$ are positive weights for each supporting citation and $v_j$ are (typically larger) weights for refuting citations. (In practice, an extra scaling factor may be applied to refutations, e.g. $v_j = \alpha \times w_j$ with $\alpha > 1$, to ensure refutations have greater impact than an equal-strength confirmation.)
-
-The scoring algorithm updates the credibility of every node whenever new evidence is added. Pseudocode for a simplified scoring update is shown in Listing~\ref{lst:score}. In this simplified version, we assume each support adds +1 and each refutation adds -$\alpha$ to the score (with $\alpha>1$). In a real implementation, these would be replaced by the nuanced weights from DEW, and an iterative convergence procedure might be used to handle recursive dependencies.
-
-\begin{lstlisting}[language=Python, caption={Simplified pseudo-code for updating a paper's credibility score based on new evidence.}, label={lst:score}]
-def update_score(paper):
-    score = paper.initial_score  # e.g., 0 for new papers
-    for citation in paper.incoming_citations:
-        if citation.type == 'support':
-            score += citation.weight  # e.g., +1
-        elif citation.type == 'refute':
-            score -= REFUTATION_FACTOR * citation.weight  # e.g., -5
-    paper.score = score
-\end{lstlisting}
-
-This scoring mechanism operationalizes the principle that falsifications are more epistemically significant than confirmations. For example, if a claim $A$ has, say, five papers supporting it and no refutations, its ASB might be moderately high. But if a sixth paper comes along and refutes $A$ with strong evidence, that single refutation could outweigh the five supports, dramatically lowering $A$'s score. The refuting paper itself would receive a high score for providing compelling negative evidence. In effect, the system is constantly asking: "Has this claim been robustly challenged, and if so, did it withstand the test?" A claim that continues to be supported and never credibly refuted will see its score rise over time, whereas a claim that is refuted (or whose supporting evidence is undermined by later findings) will see its score fall.
-
-Moreover, the graph structure allows \textbf{propagation of impact}. If a foundational paper $A$ is refuted by $D$, not only is $A$'s score reduced, but any other paper $B$ that heavily relied on $A$ (say $B$ supported $A$ or built upon $A$'s result) may also suffer a hit to its credibility, because one of the pillars supporting $B$ has cracked. ASB can capture this by dynamically recomputing scores so that the repercussions of new evidence ripple through the network. Over time, this helps prevent entire lines of research from resting on a faulty result: the moment the result is invalidated, the dependent work is flagged (via lowered scores) unless it can stand independently. 
-
 
 \subsection{Avoiding the Pitfalls of Consensus and Reputation Systems}
 
@@ -423,8 +402,136 @@ In terms of misinformation attacks (say, a coordinated attempt to flood the syst
 Overall, the ASB protocol provides a framework for scientific knowledge that is more robust to human biases and social dynamics. It re-focuses validation on empirical reality as it unfolds through experiments. By doing so in a decentralized and transparent way, it aligns closely with the ideal of science as a self-correcting process. It offers a path to \emph{truth without consensus}—allowing consensus to be a result of truth, not a substitute for it.
 
 
+
+
+\section{Technical Section}
+
+\subsection{Graph Model}
+
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}[node distance=2.0cm and 2.5cm, every node/.style={draw, circle, fill=blue!5, minimum size=1cm, align=center}]
+		\node (A) at (0,0) {A\\(Claim)};
+		\node (B) at (-2,-2) {B\\(supports A)};
+		\node (C) at (2,-2) {C\\(supports A)};
+		\node (D) at (0,-4) {D\\(refutes A)};
+		\node (E) at (0,-6) {E\\(supports D)};
+		\draw[->, thick, green!60!black] (B) -- (A) node[midway, above, sloped]{\small supports};
+		\draw[->, thick, green!60!black] (C) -- (A) node[midway, above, sloped]{\small supports};
+		\draw[->, thick, red] (D) -- (A) node[midway, right]{\small refutes};
+		\draw[->, thick, green!60!black] (E) -- (D) node[midway, right]{\small supports};
+	\end{tikzpicture}
+	\caption{Example evidence graph fragment. Node A represents an initial claim. Nodes B and C provide supporting evidence for A (green arrows). Node D provides a refuting evidence against A (red arrow). Node E supports the findings of D (i.e., replicates D's refutation of A). In the ASB system, this network of support and refutation relationships would be used to compute credibility scores for each node.}
+	\label{fig:graph}
+\end{figure}
+
+In ASB, every research publication (or scientific claim) is represented as a node in a directed graph. We call this the \textbf{evidence graph}. An edge from node $B$ to node $A$ indicates that publication $B$ has cited publication $A$. However, unlike traditional citation indexes that do not distinguish the nature of the citation, ASB requires each citation to be annotated with its \emph{polarity}:
+\begin{itemize}
+	\item \textbf{Support}: If $B$'s findings \textit{support}, reproduce, or are consistent with the claims of $A$.
+	\item \textbf{Refute}: If $B$'s findings \textit{contradict}, falsify, or cast serious doubt on the claims of $A$.
+\end{itemize}
+Each node can thus accumulate incoming links of either type over time as new papers cite it. These links form chains of evidence: for example, a paper $C$ might support paper $B$ which in turn refuted paper $A$, creating a sequence of evidence relationships.
+
+Figure~\ref{fig:graph} illustrates a fragment of such an evidence graph. Each link is labeled as supporting (green arrow) or refuting (red arrow) evidence. This structure encodes not just which papers are connected, but the \emph{stance} of that connection, which is crucial for assessing credibility. A paper with many independent supporting replications will look very different in this graph from one that has attracted a well-substantiated refutation.
+
+Importantly, this evidence graph is intended to be \textbf{open and evolving}. Anyone can add a new node (publish a new result) that cites prior work with appropriate support/refute designations. There is no central authority deciding which evidence is allowed; instead, the network grows organically as knowledge progresses. The graph provides a living documentation of the state of scientific testing for each claim. As evidence accumulates, the structure of the graph tells the story of how that claim has stood up (or faltered) under scrutiny.
+
+
+
+\subsection{Evidence Fragility Score (EFS) algorithm}
+The Evidence Fragility Score (EFS) is calculated by a trustless and recursive algorithm designed to evaluate the strength, transparency, and falsifiability of a research object without relying on consensus, reputation, or human authority.
+
+EFS operationalizes the principle that textbf{falsifications are more epistemically significant than confirmations}. For example, if a claim $A$ has, say, five papers supporting it and no refutations, its ASB might be moderately high. But if a sixth paper comes along and refutes $A$ with strong evidence, that single refutation could outweigh the five supports, dramatically lowering $A$'s score. The refuting paper itself would receive a high score for providing compelling negative evidence. In effect, the system is constantly asking: "Has this claim been robustly challenged, and if so, did it withstand the test?" A claim that continues to be supported and never strongly refuted will see its score rise over time, whereas a claim that is refuted (or whose supporting evidence is undermined by later findings) will see its score fall.
+
+Moreover, the \textbf{graph structure and the recursive nature of the EFS algorithm allows for the propagation of impact}. If a research $A$ is refuted by $D$, not only is $A$'s score reduced, but any other research $B$ that heavily relied on $A$ (say $B$ supported $A$ or built upon $A$'s result) may also suffer a hit to its EFS score, because one of the pillars supporting $B$ has cracked. EFS can capture this by dynamically recomputing scores so that the repercussions of new evidence ripple through the network. Over time, this helps prevent entire lines of research from resting on a faulty result: the moment the result is invalidated, the dependent work is flagged (via lowered scores) unless it can stand independently. 
+
+\subsubsection{How It Works}
+Each Research object carries metadata fields that describe its transparency, exposure to adversarial testing, funding conditions, and epistemic risk. 
+
+The EFS algorithm combines the following key factors:
+\begin{itemize}
+	\item A local validation score - relates to Popper's falsifiability concept
+	\item An antifragile funding score - relates to Taleb's \emph{skin in the game} concept and also the \emph{agent-principal problem}.
+	\item An antifragile ruin score - to take into account the cost of being wrong.
+	\item Recursive analysis of all linked research replications and refutations.
+\end{itemize}
+
+\subsubsection{Research Object Fields}
+\begin{description}
+	\item[\texttt{ruin\_scale}] Enum: \texttt{low}, \texttt{medium}, \texttt{high}. Used to calculate the ruin score dynamically.
+	\item[\texttt{ruin\_impact}] Enum: \texttt{low}, \texttt{medium}, \texttt{high}. Used to calculate the ruin score dynamically.
+	\item[\texttt{funders}] Array of objects. Each funder includes:
+	\begin{itemize}
+		\item \texttt{wallet\_id}: String. The identifier of the wallet.
+		\item \texttt{anon}: Boolean. Whether the wallet is anonymous.
+		\item \texttt{wallet\_age}: Integer. Wallet age in days.
+		\item \texttt{amount}: Float. Amount funded.
+	\end{itemize}
+	\item[\texttt{data\_openness}] Enum: \texttt{none}, \texttt{partial}, \texttt{full}. Indicates the level of access to raw data and methods.
+	\item[\texttt{validation\_enabled}] Boolean. Whether the research exposes raw data, methods, and test logic.
+	\item[\texttt{test\_vectors}] Boolean. Whether test inputs and expected outputs are provided.
+	\item[\texttt{refutations}] Count of formal, timestamped refutations logged on-chain.
+	\item[\texttt{replications}] Count of successful replications with hash-verified results.
+	\item[\texttt{research\_file\_url}] String. URL of the main research paper.
+	\item[\texttt{research\_file\_hash}] String. Cryptographic hash of the research paper.
+	\item[\texttt{data\_files}] Array of objects. Each object includes:
+	\begin{itemize}
+		\item \texttt{url}: String. URL where a dataset is stored.
+		\item \texttt{hash}: String. Hash of the dataset to ensure integrity.
+	\end{itemize}
+\end{description}
+
+
+\subsubsection{Validation Score}
+\[
+\text{validation}(R) = \mathbf{1}_{\text{validation\_enabled}} \cdot 0.4 + \text{data\_openness\_score} + \mathbf{1}_{\text{test\_vectors}} \cdot 0.2 + \log_2(n_{\text{rep}} + 1) \cdot 0.05 - n_{\text{ref}}
+\cdot 0.1
+\]
+
+\subsubsection{Antifragile Funding Score}
+
+Let $R$ contain a set of funders $F = \{f_1, f_2, \dots, f_n\}$, where each funder $f_i$ is a tuple $(\text{anon}_i, \text{wallet\_age}_i, \text{amount}_i)$. Then the funding score is computed as the
+weighted average over all funders:
+
+\[
+\text{funding}(R) = \frac{\sum_{i=1}^{n} \text{amount}_i \cdot \left(1 - 0.2 \cdot \text{anon}_i - 0.1 \cdot \mathbf{1}_{\text{wallet\_age}_i < 30}\right)}{\sum_{i=1}^{n} \text{amount}_i}
+\]
+
+\subsubsection{Antifragile Ruin Score}
+Let $\texttt{ruin\_scale}, \texttt{ruin\_impact} \in \{\texttt{low}, \texttt{medium}, \texttt{high}\}$. The final ruin score is computed as:
+
+\[
+\text{ruin}(R) = 1.0 + 0.25 \cdot \text{scale}(\texttt{ruin\_scale}) + 0.25 \cdot \text{impact}(\texttt{ruin\_impact})
+\]
+
+Where:
+\begin{itemize}
+	\item $\text{scale}(\texttt{low}) = 0$, $\texttt{medium} = 1$, $\texttt{high} = 2$
+	\item $\text{impact}(\texttt{low}) = 0$, $\texttt{medium} = 1$, $\texttt{high} = 2$
+\end{itemize}
+
+This results in $\text{ruin}(R) \in [1.0, 2.0]$.
+
+\subsubsection{The EFS Algorithm}
+Let $R$ be a Research object. Then:
+\[
+\text{EFS}(R) =
+\begin{cases}
+	0 & \text{if } \text{isValid}(R) = \text{false} \\
+	\frac{\text{validation}(R) \cdot \text{funding}(R)}{\text{ruin}(R)} + \sum_{i=1}^{m} \mathbf{1}_{\text{isValid}(R_i^{(\text{rep})})} \cdot \log_2(\text{EFS}(R_i^{(\text{rep})}) + 1) \cdot w_{\text{rep}}
+	\\ - \sum_{j=1}^{n} \mathbf{1}_{\text{isValid}(R_j^{(\text{ref})})} \cdot \text{EFS}(R_j^{(\text{ref})}) \cdot w_{\text{ref}} & \text{otherwise}
+\end{cases}
+\]
+
+Where:
+\begin{itemize}
+	\item $w_{\text{rep}}$: weight per replication (e.g., $0.05$)
+	\item $w_{\text{ref}}$: weight per refutation (e.g., $0.1$)
+\end{itemize}
+
+
 \section{Conclusion}
-The Antifragile Science Blockchain protocol represents a paradigm shift in how we evaluate and incentivize scientific knowledge. Instead of relying on human consensus or pre-existing reputations, ASB grounds credibility in the objective relationships of support and refutation documented across studies. We have discussed how this approach is deeply rooted in the philosophy of science: it embodies Popper's falsifiability criterion by structurally rewarding refutation, and it echoes Taleb's insights by making the system antifragile and requiring genuine stakes (skin in the game) for scientific claims. 
+The Antifragile Science Blockchain platform represents a paradigm shift in how we evaluate and incentivize scientific knowledge. Instead of relying on human consensus or pre-existing reputations, ASB grounds credibility in the objective relationships of support and refutation documented across studies. We have discussed how this approach is deeply rooted in the philosophy of science: it embodies Popper's falsifiability criterion by structurally rewarding refutation, and it echoes Taleb's insights by making the system antifragile and requiring genuine stakes (skin in the game) for scientific claims. 
 
 By contrast, consensus-driven and authority-driven models can too easily conflate popularity with truth. ASB breaks that link, ensuring that even a lone dissenting experiment can carry the day if it is backed by decisive evidence. In doing so, it preserves the core scientific virtue of skepticism and continuous testing. The open, decentralized nature of the protocol further ensures that no viewpoint can be unfairly censored and that the system as a whole learns from its errors over time.
 
@@ -434,7 +541,7 @@ In summary, \textbf{truth without consensus} is not only a philosophical stance 
 
 \bibliographystyle{plain}
 
-\bibliography{bibs/Popper1963,bibs/Taleb2012,bibs/Taleb2018,bibs/CBSnewsPurduePharma,bibs/PBSPurduePharma,bibs/Alonso2021,bibs/GLENNA2021104290,bibs/mindthegap2020,bibs/ehn2018,bibs/USvsHolmes2022,bibs/buzzfeednews2018,bibs/justivegove-theranos}
+\bibliography{bibs/Popper1963,bibs/Taleb2012,bibs/Taleb2018,bibs/CBSnewsPurduePharma,bibs/PBSPurduePharma,bibs/Alonso2021,bibs/GLENNA2021104290,bibs/mindthegap2020,bibs/ehn2018,bibs/USvsHolmes2022,bibs/buzzfeednews2018,bibs/justivegove-theranos,bibs/Semmelweis2006,bibs/WGMcbride,bibs/Diethylstilbestrol2000,bibs/Wolff1997,bibs/Fitzpatrick2006,bibs/VarleyVarma2021}
 
 \end{document}
 
