@@ -59,8 +59,38 @@ The platform and its value should stand on its own legs.
 Having no goverment in my case means no possibility of bias or corruption.
 The trust must come from knowing how the system works (it's open source) and the fact that the technology will execute the code that was programmed with exactly as it should.
 
+p.111
+> "The famously mistreated Austro-Hungarian doctor Ignaz Semmelweis had observed that *more women died giving birth in hospitals than giving birth on the street*. The doctors who kept killing patients could not accept his facts or act on thjem since he "had no theory" for his observations." #iatrogenesis
+
+Related research study:
+- https://www.researchgate.net/publication/247731782_From_Ignaz_Semmelweis_to_the_Present_Crucial_Problems_of_Hospital_Hygiene
+
+@article{article,
+author = {Bencko, Vladimir and Schejbalova, Miriam},
+year = {2006},
+month = {02},
+pages = {3-7},
+title = {From Ignaz Semmelweis to the Present: Crucial Problems of Hospital Hygiene},
+volume = {15},
+journal = {Indoor and Built Environment - INDOOR BUILT ENVIRON},
+doi = {10.1177/1420326X06062362}
+}
+
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC6060929/
+Peer RF, Shabir N. Iatrogenesis: A review on nature, extent, and distribution of healthcare hazards. J Family Med Prim Care. 2018 Mar-Apr;7(2):309-314. doi: 10.4103/jfmpc.jfmpc_329_17. PMID: 30090769; PMCID: PMC6060929.
+
+p.112
+> "Iatrogenics is compounded by the 'agency problem' or 'principal-agent problem', which emerges when one party (the agent) has personal interests that are divorced from those of the one using his services (the principal)." #iatrogenisis
+
+p.112
+> "Medicine has known about iatrogenics since at least the 4th century before our era - *primum non nocere ('first to no harm')* is a first principle attributed to Hippocrates and integrated in the so-called Hippocratic Oath taken by every medical doctor on his commencement day." #via-negativa #iatrogenesis
+
+p.116
+> "Theories are superfragile; they come and go, then come and go again; phenomenologies stay, and I can't believe people don't realize that phenomenology is 'robust' and usable, and theories, while overhyped, are unreliable for decision-making - outside physics."
+
+
 p.418
-> "The tragedy is that it is very hard to get funding to replicate - and reject - existing studies. And even if there were money for it, it would be hard to find takers: trying to replicate studies will not make anyone a hero."
+> "The tragedy is that it is very hard to get funding to replicate - and reject - existing studies. And even if there were money for it, it would be hard to find takers: trying to replicate studies will not make anyone a hero." #causality #replication
 
 p.417
 > "There is an optionality on the part of the researcher, no different from that of a banker. The researcher gets the upside, truth gets the downside. The researcher's free option is in *his ability to pick what statistics can confirm his belief - or show a good result - and ditch the rest*. He has the option to stop once he has the __right__ result."
