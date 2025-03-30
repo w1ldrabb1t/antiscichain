@@ -1,2 +1,7 @@
-*paper
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.gz
 *.swp
