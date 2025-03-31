@@ -8,6 +8,8 @@
 \usetikzlibrary{arrows,positioning}
 \usepackage{listings}
 \usepackage{hyperref}
+\usepackage{fancyhdr}   % For custom headers/footers
+\usepackage{parskip}     % Adds spacing between paragraphs
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -15,18 +17,36 @@
     citecolor=blue
 }
 
-\title{Anti-Fragile Scientific Knowledge Blockchain: The Epistemology Behind the ASB Protocol}
+\title{Anti-Fragile Scientific Knowledge Blockchain: Breaking Free From Scientism}
 \author{Bruno Coelho}
 \date{2025}
+
+% === Header/Footer Customization ===
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+
+\lfoot{\textbf{Version 0.2}}     % Left footer
+\cfoot{}                         % Center footer (you could put page numbers here)
+\rfoot{\thepage}                % Right footer - page number
+
+% Optional: line at the top
+\renewcommand{\headrulewidth}{0pt}
+% Optional: line at the bottom
+\renewcommand{\footrulewidth}{0.1pt}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-Scientific truth should be determined by the weight and structure of evidence, most notably refutation (\emph{via negativa}) over time, not by popularity, reputation, or consensus. 
-The Antifragile Science Blockchain (ASB) protocol encodes scientific credibility as a function of an evolving evidence graph rather than votes or status. 
-This paper articulates the philosophical foundations of ASB, drawing on Karl Popper's principle of falsifiability and Nassim Nicholas Taleb's concepts of antifragility and \emph{skin in the game}. We argue that falsification or refutation attempts ("not all swans are white") provide greater epistemic value than looking for evidence that something works, especially in complex non-linear response systems. 
-In this paper I present ASB - a knowledge generation system that rewards refutation (more) than replication. I contrast this evidence-driven approach with consensus-based and reputation-based methods of scientific validation, highlighting the dangers of treating scientific truth as a democratic process. By utilizing an open, censorship-resistant publication model and weighting citation links via Event Fragility Score (EFS), the ASB protocol creates a self-correcting system that is robust to misinformation and echo chambers. 
+Scientific truth should be determined by the weight and structure of evidence—especially refutation (\emph{via negativa}) over time—not by popularity, reputation, or consensus. Yet modern science has increasingly become entangled with \textbf{Scientism}: a belief system that treats science as an authority to be obeyed, rather than a method to be tested.
+
+The Antifragile Science Blockchain (ASB) is a direct response to this epistemic corruption. It is both a protocol and a platform: the protocol defines how scientific claims are evaluated through a falsifiability-first framework, and the platform provides the open infrastructure where researchers, reviewers, and adversarial testers interact with and evolve the knowledge graph. In ASB, failed claims strengthen the system. Refutations are not buried; they are rewarded.
+
+This paper articulates the philosophical foundations of ASB, drawing on Karl Popper's principle of falsifiability and Nassim Nicholas Taleb's concepts of \emph{antifragility} and \emph{skin in the game}. We argue that refutation (“not all swans are white”) provides far greater epistemic value than confirmation, especially in complex, non-linear systems where false confidence leads to systemic harm.
+
+The ASB protocol implements an antifragile scientific system—one that grows stronger with every attempt to find faults, both in the system itself and in the body of knowledge it holds. By contrasting this model with the fragile, consensus-driven methods promoted by Scientism—where dissent is suppressed, negative results ignored, and incentives warped—we expose the hidden vulnerabilities in the current scientific establishment.
+
+Through an open, censorship-resistant platform and a citation-weighting algorithm based on Evidence Fragility Score (EFS), ASB realigns science with adversarial testing, transparency of incentives, and the permanent recording of failed hypotheses. The result is not a system that fears being broken—but one that welcomes it (or even needs it!).
 \end{abstract}
 
 \section*{Preamble}
@@ -41,7 +61,7 @@ In the digital era, the challenges of discerning truth are amplified by informat
 
 The Antifragile Science Blockchain (ASB) protocol takes a different approach. Instead of polling opinions or deferring to reputations, ASB measures credibility through an \emph{evidence graph} of scientific publications. Each paper or claim is a node, and directed links (citations) carry semantic weight indicating whether the cited result is being supported or challenged. By analyzing this evolving graph of evidence, ASB aims to quantify how well a claim has survived experimental tests over time. In essence, credibility emerges from the \emph{structure of evidence}, not the number of people who believe it.
 
-This paper articulates the epistemological foundations behind ASB and contrasts it with consensus-based and reputation-based approaches to scientific validation. In \S2, we discuss the philosophical underpinnings of our approach, drawing on Karl Popper's principle of falsifiability and Nassim Nicholas Taleb's concepts of ``antifragility`` and ``skin in the game.'' Section~3 outlines the design of the ASB protocol, explaining how papers form a citation network weighted by a Event Fragility Score (EFS) scheme to calculate credibility scores. In \S4, we compare this evidence-driven model to systems based on consensus or reputation and examine the dangers those systems face. Section~5 then discusses how an open, censorship-resistant evidence graph allows ASB to remain robust against misinformation and echo chambers, essentially becoming \emph{antifragile}---improving its knowledge quality through challenges. Finally, \S6 concludes with reflections on how ``truth without consensus'' can guide the future of decentralized scientific knowledge infrastructure.
+This paper articulates the epistemological foundations behind ASB and contrasts it with consensus-based and reputation-based approaches to scientific validation. In \S2, we discuss the philosophical underpinnings of our approach, drawing on Karl Popper's principle of falsifiability and Nassim Nicholas Taleb's concepts of ``antifragility`` and ``skin in the game.'' Section~3 outlines the design of the ASB protocol, explaining how papers form a citation network weighted by a Event Fragility Score (EFS). In \S4, we compare this evidence-driven model to systems based on consensus or reputation and examine the dangers those systems face. Section~5 then discusses how an open, censorship-resistant evidence graph allows ASB to remain robust against misinformation and echo chambers, essentially becoming \emph{antifragile}---improving its knowledge quality through challenges. Finally, \S6 concludes with reflections on how ``truth without consensus'' can guide the future of decentralized scientific knowledge infrastructure.
 
 \section{Knowledge is Fragile}
 
@@ -52,17 +72,10 @@ Empirical based knowledge generation can be self-correcting, meaning that we kno
 Having said that, there are several shortcomings that must be understood about the fragility of knowledge, specially when applied to complex systems (with non-linear responses).
 
 \subsection{Absence of evidence vs evidence of absense}
+No amount of empirical evidence can prevent a piece of knowledge to be refuted. All it took was one black swan discovered by some Dutch explorers to break the vast amounts of evidence that all swans were white. Absence of evidence doesn't prove anything. Absence of proof that a system doesn't work doesn't prove that the system works. In other words, just because you nor anybody else for that matter, weren't able to find anything ``wrong'' with something, doesn't meant that everything is ``right'' about it.
 
-No amount of empirical evidence can prevent a piece of knowledge to be refuted.
-
-All it took was one black swan discovered by some Dutch explorers to break the vast amounts of evidence that all swans were white. Absence of evidence doesn't prove anything.
-
-Absence of proof that a system doesn't work doesn't prove that the system works. 
-In other words, just because you nor anybody else for that matter, weren't able to find anything ``wrong'' with something, doesn't meant that everything is ``right'' about it.
-
-Taleb illustrates this in many ways but my favorite is the turkey problem. The turkey has several days worth of ``evidence'' that Humans care about turkeys since they are being fed and taken cared of. Unfortunately, there's tthis little event called ``Thanks Giving'' which is when \textit{some} turkeys (minus the survivors who might be clueless to this fact) realize that Humans are not so friendly after all. 
-
-Don't be a turkey, like Taleb would say.
+Taleb illustrates this in many ways but my favorite is \emph{the turkey problem}. See, the turkey has several days worth of ``evidence'' that Humans care about turkeys since they are being fed and taken cared of. Unfortunately, there's tthis little event called ``Thanks Giving'' which is when \textit{some} turkeys (minus the survivors who might be clueless to this fact) realize that Humans are not so friendly after all. 
+The lesson here, as Taleb would say, is... don't be a turkey.
 
 On the other hand, the absence of evidence that a system works doesn't prove that it doesn't work. For example, not being able to understand nor explain the intricate aerodynamic system that allows a bumblebee to fly doesn't ``prove'' that the bumblebee can't fly. I'm sure you've seen one flying before, yes?
 
@@ -193,10 +206,11 @@ Mistakes happen. Being wrong is inevitable, especially in the exploration of com
 
 The critical insight is this:
 \begin{quote}
-	We do not fear error itself. We fear the cost of error.
+	We do not fear errors b ythemselves. We fear the cost of errors.
 \end{quote}
 
-When scientists, engineers, or policymakers make decisions, they must assess not just if something might be wrong — but what happens if it is. This is especially true in high-stakes domains like medicine, AI safety, climate systems, and synthetic biology.
+When scientists, engineers, or policymakers make decisions, they must assess not just the probability of something go wrong — but what happens if 
+it does go wrong. This is especially true in high-stakes domains like medicine, AI safety, climate systems, and synthetic biology.
 
 This leads us to a vital principle in antifragile thinking: \textbf{The greater the cost of being wrong, the more we must stress-test the claim.}
 
@@ -334,64 +348,62 @@ The only way out is to realign scientific practice with antifragile principles:
 \section{The Antifragile Science Blockchain - ASB}
 
 \subsection{The Critical Role of the Blockchain}
-TO DO (??)
+The use of the Blockchain was something that I thought of since day one because it enables some key ASB design principles to be possible out-of-the-box, without requiring the need to rely on fragile methods that depend on centralized technology and human-based decision-making.
 
-\subsection{Falsifiability and the Primacy of Refutation}
-At the core of the ASB epistemology is Karl Popper's notion of \emph{falsifiability}\cite{Popper1963}. Popper argued that for a hypothesis to be scientific, it must be testable in a way that could potentially show it to be false. In his words, ``Every genuine test of a theory is an attempt to falsify it, or refute it''\cite{Popper1963}. Confirming instances of a theory can increase our confidence in it, but can never conclusively prove it true. By contrast, a single counter-example can definitively show a universal hypothesis to be false. Albert Einstein echoed this asymmetry: \emph{``No amount of experimentation can ever prove me right; a single experiment can prove me wrong.''}. The scientific method, ideally, is a process of bold conjectures and rigorous attempts at refutation.
+\subsubsection{Radical Transparency}
+I wanted to make sure that all the research papers being added into the ASB platform, and linked to support or refute other research papers, would be publicly available for everyone to see at all times. But it doesn't stop there. I'm talking about being transparent to the point of showing the code that manages the ASB platform, so if you are wondering why a paper has a bad fragility score (more on this in the Technical Section), you can read and validate the code that generates that score. The code is not just "open source" - you can literally see the code that is running on the Blockchain!
 
-In line with this philosophy, the ASB protocol treats \textbf{negative evidence} (refutations, failed replications, contradictions) as more decisive than \textbf{positive evidence} (confirmations or replications). The discovery of a ``black swan''---an outcome that contradicts a prevailing hypothesis---is weighted more heavily in the credibility score than dozens of observations consistent with the hypothesis. This is not to downplay the value of replication, which is crucial for verifying robustness, but to recognize that from an epistemic standpoint, refutation carries a finality that confirmation does not. By structuring the scoring to heavily reward successful falsification attempts, ASB incentivizes researchers to actively test the boundaries of current knowledge. Rather than accumulate votes of confidence, a claim must survive attempts to dismantle it.
+\subsubsection{Full Immutability}
+Once something is added to the blockchain, it cannot be changed without compromising the entire chain, which is securely hashed and cryptographically linked. In other words: what happens on the blockchain, stays on the blockchain—unchanged, forever. This means it's virtually impossible for anyone to alter previously published research without invalidating the block that represents that research. Each block, along with its place in the chain, is hashed. Changing even a single block alters its hash, which breaks the chain's validity. As a result, the altered copy would be rejected by all other honest nodes in the network.
 
+\subsubsection{Censorship Resistance}
+Following the footsteps of the previous point, one of the most powerful features of the Blockchain is that it resists censorship by design. As long as a submission meets the protocol’s requirements, no entity—no matter how powerful—can block it. For ASB, this is essential. It ensures that research challenging dominant narratives, institutions, or industries still finds its place in the permanent scientific record.
 
-\subsection{Antifragile Knowledge Via Negativa}
-We've covered before, in the antifragile learning chapter, that an antifragile system is one that grows stronger from stressors, volatility, and failures. 
+\subsubsection{Trustless}
+The previous point already hints at the reason why the Blockchain is \emph{trustless}. In the Blockchain, we don't rely on any central authority - we don't need to! We simply trust the code that is running on the Blockchain as well as the cryptographic mechanisms that are in place to protect its integrity.
+There's no need to trust a bank, a government, or a single institution to verify what happened. The system verifies itself. Every transaction is validated by a decentralized network of nodes, and every block is time-stamped, hashed, and permanently recorded. Consensus algorithms like Proof of Work or Proof of Stake make sure that bad actors can’t game the system without enormous cost. Trust, in this context, isn't granted—it's replaced by math, code, and transparency. That's what makes it powerful. That’s what makes it trustless.
 
+\subsubsection{Distributed}
+Platforms that run on centralized servers can be targeted and taken down much more easily than a distributed network. That’s one of the core design principles of the Blockchain—distributed computing power and storage. On the Blockchain, there is no single server or centralized entity controlling the data or executing the code. Instead, everything is distributed across all the nodes in the network. Each node stores a full (or partial, depending on the implementation) copy of the ledger and participates in maintaining the system’s integrity. This distribution makes the network resilient, fault-tolerant, and far more difficult to compromise.
+
+\subsubsection{Open}
+The Blockchain embraces radical openness where anyone can use get access to it and use it. This is a key aspect that I wanted to bring into the ASB platform because I want to make this platform censor-free while at the same time making it impossible for anyone to hide from the mistakes they did in their past research (eg. impossible to hide iatrogenesis). The goal is to prevent any central gatekeeper from suppressing any kind of results. If a paper presents inconvenient evidence or challenges powerful interests, it should still be available on the ASB network for open access to everyone.
+
+\subsection{Please break me - if you can}
+At the core of the ASB epistemology is Karl Popper's notion of \emph{falsifiability}\cite{Popper1963}. Popper argued that for a hypothesis to be scientific, it must be testable in a way that could potentially show it to be false. In his words, ``Every genuine test of a theory is an attempt to falsify it, or refute it''\cite{Popper1963}. 
+
+\textbf{Confirming instances of a theory can increase our confidence in it, but can never conclusively prove it true}. By contrast, a single counter-example can definitively show a universal hypothesis to be false. Albert Einstein echoed this asymmetry: \emph{``No amount of experimentation can ever prove me right; a single experiment can prove me wrong.''}. The scientific method, ideally, is a process of bold conjectures and rigorous attempts at refutation.
+
+In line with this philosophy, the ASB protocol treats \textbf{negative evidence} (refutations, failed replications, contradictions) as more decisive than \textbf{positive evidence} (confirmations or replications). The discovery of a ``black swan''---an outcome that contradicts a prevailing hypothesis---is weighted more heavily in the research fragility score than dozens of observations consistent with the hypothesis. This is not to downplay the value of replication, which is crucial for verifying robustness, but to recognize that from an epistemic standpoint, refutation provides a much stronger signal that confirmation does not. 
+By structuring the scoring to heavily reward successful falsification attempts, ASB incentivizes researchers to actively test the boundaries of current knowledge. Rather than accumulate votes of confidence, a claim must survive attempts to dismantle it.
+
+It's like labeling a package with the intriguing message - "please break me, if you can". If the package is fragile, then it will break and be removed from the area (while others look at you wondering what's wrong with you). If the package is robust, it will survive your attempts to break it (while you might hurt yourself in the process). Finally, if the package is antifragile, then you will only make it stronger with your attempts to break it. The same is true for the research nodes in the ASB network.
+
+\subsection{Knowledge Via Negativa}
 The problem with most scientific investigation is that it focus on finding what works and proving that it works by establishing causality. The reason why this is a problem is because, like Taleb writes in Antifragile \cite{Taleb2012}(p.303), ``we know a lot more what is wrong than what is right, or, phrased according to the fragile/robust classification, negative knowledge (what is wrong, what does not work) is more robust to error than positive knowledge (what is right, what works). So knowledge grows by subtraction much more than by addition - given that what we know to be wrong cannot turn out to be right, at least not easily.''. In other words, we advance understanding by identifying and removing falsehoods more than by piling up tentative truths. Each time an experiment reveals that a theory does \emph{not} hold in some condition, our overall knowledge is improved by elimination of error. What remains after surviving many such tests is a theory that is more robust.
 
 Using this Via Negativa approach, mistakes and errors are welcomed because the overall knowledge base improves. Taleb writes ``This creates \emph{a separation between good and bad systems}. Good systems such as airlines are set up to have small errors, independent from each other - or, in effect, negatively correlated to each other, \emph{since mistakes lower the odds of future mistakes}.''\cite{Taleb2012}
 
-The ASB protocol is explicitly designed to be antifragile in an epistemic sense. When a paper's claim is proven wrong (say a high-profile result is decisively refuted by new data), it is not a failure of the system but a strengthening event. The credibility score of that claim will drop, and any other claims heavily reliant on it will be reevaluated in light of the new evidence, thereby preventing further spread of the flawed result. Meanwhile, the act of refutation (the new evidence) is itself rewarded with a high credibility for exposing a false claim. The overall knowledge graph becomes healthier: false nodes are pruned or marked, and only those claims that endure repeated challenges maintain high credibility. Thus, ASB \emph{benefits from} failed experiments and negative results---it becomes more reliable as more hypotheses are tested and challenged. This property maps closely to antifragility: the system improves its epistemic robustness through the very process of being stressed by refutations.
+The ASB protocol is explicitly designed to be antifragile in an epistemic sense. When a paper's claim is proven wrong (say a high-profile result is decisively refuted by new data), it is not a failure of the system but a strengthening event. The fragility score of that claim will drop, and any other claims heavily reliant on it will be reevaluated in light of the new evidence, thereby preventing further spread of the flawed result. 
+Meanwhile, the act of refutation (the new evidence) is itself rewarded with a high credibility for exposing a false claim. The overall knowledge graph becomes healthier: false nodes are pruned or marked, and only those claims that endure repeated challenges maintain high credibility. 
+Thus, ASB \emph{benefits from} failed experiments and negative results---it becomes more reliable as more hypotheses are tested and challenged. This property maps closely to antifragility: the system improves its epistemic robustness through the very process of being stressed by refutations.
 
+\subsection{Skin in the Game for the Research}
+Another concept from Taleb's Incerto is the idea of \emph{skin in the game}\cite{Taleb2018}. In domains of uncertainty, Taleb emphasizes that having "skin in the game"—being exposed to the cost of being wrong—is not only an ethical requirement (one should never be antifragile by offloading the downside of their mistakes onto others), but also a way to prevent clueless yet powerful actors from tampering with complex, non-linear systems (and blowing us all up in the process).
+However, \emph{skin in the game} should not be confused with measuring personal credibility. Someone might have a long history of being wrong and still produce valid, even groundbreaking, research. That’s why the ASB platform doesn't track or score the credibility of authors — we don't care about that. What we \emph{do} care about is the research itself. 
+This is \emph{skin in the game} applied to the research object, not the researcher. We focus on what a paper confirms or refutes, not who wrote it. In ASB, every claim must stand or fall on its own evidence and fragility score—regardless of reputation.
 
-\subsection{Skin in the Game: Accountability for Claims}
-Another concept from Taleb's \emph{Incerto} is the idea of \emph{skin in the game}\cite{Taleb2018}. In domains of uncertainty, Taleb emphasizes that those who make decisions or assertions should face commensurate risks and consequences. Translated to science, this means that scientists (or their hypotheses) should bear downside risk if their claims turn out to be wrong. Traditional scientific practice enforces this only indirectly---a researcher who publishes incorrect findings might lose reputation, or a journal might issue a retraction. However, these consequences are often muted or delayed, and in some cases, flashy positive results are rewarded in the short term even if they don't hold up to scrutiny later.
-
-The ASB protocol can instantiate a form of skin in the game by directly tying a paper's enduring credibility to its claims' accuracy. If an author publishes a claim that later gets decisively refuted, that paper's ASB credibility score plummets, impacting the author's overall credibility profile in the system. In a sense, authors stake their reputation on each published result. A corollary is that producing strong evidence \emph{against} a claim (falsifying someone else's hypothesis) raises the credibility of the refuting paper and its authors. By making incorrect assertions carry an immediate penalty (loss of credibility points) and making correct refutations carry a reward, the system aligns incentives with the pursuit of truth. Scientists are encouraged to be more cautious with speculative claims (knowing they cannot simply ride on prestige if proven wrong) and more bold in challenging established ideas when they have solid evidence. This dynamic ensures that credibility is earned through \emph{skin in the game}: only those ideas that can withstand risk and adversity thrive in the long run.
-
-\subsection{Avoiding the Pitfalls of Consensus and Reputation Systems}
-
-
-\subsubsection{Consensus is Not Truth}
-It is tempting to think that if a majority agrees on something, it must be true. This notion underpins many democratic or crowd-based approaches to evaluating information, from social media ``likes'' to proposals of scientific DAOs where token-holders vote on the validity of research. However, scientific history teaches us that truth is not a popularity contest. A hypothesis can be widely believed and still false (as in the geocentric model of the cosmos before Copernicus), or widely doubted and yet true (as in the case of meteorites, which were dismissed as superstition until evidence proved rocks do fall from the sky). Consensus can be a lagging indicator of truth: eventually most scientists came to accept plate tectonics or quantum mechanics, but only after decisive evidence forced a paradigm shift against initial majority skepticism.
+\subsection{Consensus is Irrelevant (and potentially misleading!)}
+It is tempting to think that if a majority agrees on something, it must be true. This notion underpins many democratic or crowd-based approaches to evaluating information, from social media ``likes'' to proposals of scientific DAOs where token-holders vote on the validity of research. However, scientific history teaches us that truth is not a popularity contest. A hypothesis can be widely believed and still be false (as in the geocentric model of the cosmos before Copernicus), or widely doubted and yet true (as in the case of meteorites, which were dismissed as superstition until evidence proved rocks do fall from the sky). Consensus can be a lagging indicator of truth: eventually most scientists came to accept plate tectonics or quantum mechanics, but only after decisive evidence forced a paradigm shift against initial majority skepticism.
 
 Moreover, consensus-based systems are vulnerable to social biases and strategic manipulation. Groupthink can cause communities to rally around appealing ideas and dismiss legitimate criticisms without proper examination. In a token-voting scenario, a well-funded interest group could buy votes to tilt the ``truth'' in their favor, irrespective of the actual evidence. Even without malicious actors, a crowd might upvote information that is easy to understand or aligns with their prior beliefs, rather than that which is rigorously validated. Online, this is evident when misleading claims go viral due to charismatic presentation or echo-chamber effects, despite being unsupported by facts.
 
 The ASB protocol circumvents these issues by \textbf{basing credibility on evidence, not on the number of people who endorse the claim}. In ASB, it does not matter if 1000 people \emph{believe} a result; what matters is whether experiments and data back it up. A single well-executed refutation in ASB can outweigh a sea of unsubstantiated upvotes. This aligns with the Popperian view that one critical test carries more weight than any amount of agreement. By design, the ASB scoring mechanism cannot be directly gamed by popularity: to increase a claim's score, one must provide new supporting evidence that will itself be scrutinized by others; to decrease a claim's score, one must provide a credible refutation. In both cases, it's the quality of evidence that moves the needle, not the headcount of supporters.
 
-\subsubsection{Reputation Does Not Guarantee Reliability}
-Another common proxy for truth is the reputation of the source. In academia, a paper published by a renowned scientist in a high-impact journal is often assumed to be reliable. While reputation can correlate with quality (experienced researchers and rigorous journals do tend to produce good science on average), it is far from infallible. Esteemed scientists have made notorious mistakes, and conversely, revolutionary findings have originated from outsiders or early-career researchers. A strict reputation-based system might have sidelined the young researchers who first discovered quasicrystals or the rogue chemists who identified the cause of ulcers (against the medical consensus at the time).
-
-Reputation-based filtering can entrench existing power structures and biases. It may give undue weight to authority and suppress innovative or contradictory findings coming from less famous individuals or non-traditional avenues. In extreme cases, it can create an \emph{echo chamber of elites}, where ideas circulate and gain credibility just because they come from within a prestigious circle, not because they have been truly tested.
-
-The ASB protocol avoids building authority into the metrics. Every paper enters the system on equal footing, with an initial neutral score regardless of author or venue. Its credibility must be earned through the evidence graph. Of course, in practice a well-regarded research group might more often produce solid supporting evidence, but the system will credit them \emph{for the evidence itself}, not their name. Likewise, if a famous researcher's claim is refuted by an unknown lab, ASB will duly decrease the famous paper's score and increase the unknown lab's paper's score. This creates a more meritocratic and dynamic ecosystem of credibility. Over time, authors who consistently produce reliable work will naturally accumulate high-scoring papers (a form of derived reputation), but it remains grounded in demonstrated evidence, not an a priori status.
-
-By decoupling credibility from explicit reputation, ASB also mitigates censorship and gatekeeping. In traditional models, an idea might struggle to be heard unless it passes editorial or peer review judgments often influenced by reputation. In contrast, ASB's open evidence graph allows anyone to put forth a claim or counter-claim; its acceptance is determined not by reputation-based filters but by how it fares when evidence is added to the graph. This significantly lowers the barrier for contrarian or novel hypotheses to be evaluated on their merits. If they are wrong, they will be falsified and get a low score; if they are right, evidence will eventually vindicate them, and their ASB will rise.
-
-
-\subsection{Open Access, Self-Correction, and Resilience to Misinformation}
-
-
-\subsubsection{Censorship-Resistance Through Open Access}
-A key design principle of ASB is that the scientific evidence graph should be globally accessible and append-only. In practice, this can be implemented through decentralized, censorship-resistant infrastructure (for example, storing papers on IPFS or a blockchain-based archive). The goal is to prevent any central gatekeeper from suppressing valid (or invalid) results. If a paper presents inconvenient evidence or challenges a powerful interest, it should nonetheless be available in the ASB network for evaluation. Only evidence and subsequent scoring will judge its fate, not a censor.
-
-By using a public ledger of contributions, ASB ensures auditability and transparency. Every citation, support, or refutation entered into the graph is recorded and can be traced back to its source. This also gives contributors \emph{skin in the game}: their claims and evidence are on record permanently. In contrast, in traditional systems, if a result is controversial, journals or committees might block its publication, or retractions might erase the trace of flawed research. With ASB, even retracted or debunked papers remain nodes in the graph (albeit with low credibility scores), serving as a record of what was attempted and learned. This openness means that the system doesn't ``forget'' mistakes; it absorbs them and uses them to inform future credibility assessments.
-
-An open ASB network is robust against localized echo chambers. Even if a group of practitioners tries to ignore contradictory evidence by not publishing it in their preferred venues, someone outside that group can add that evidence to the global graph. There is no single point of failure or control where dissenting evidence could be universally filtered out. Over time, this tends to burst filter bubbles: a claim cannot remain artificially inflated in credibility if strong counter-evidence exists anywhere in the world, because that counter-evidence can always be injected into the graph.
-
-
-\subsubsection{Self-Correction and Antifragility in Action}
+\subsection{What fools me, makes us all smarter (and antifragile)}
 The combination of the evidence-driven scoring and open access infrastructure makes ASB a \textbf{self-correcting system}. When misinformation or erroneous results enter the system (intentionally or not), they might at first get some traction if they come with what appears to be supporting evidence. However, because the system rewards attempts at refutation, there is a strong incentive for other researchers to scrutinize and test such claims. If the claim is false, eventually someone will produce the refuting data. When that happens, ASB will adjust the scores accordingly: the incorrect claim's credibility drops, and the new evidence is recorded for all to see. Far from being a weakness, these failures are how the system learns.
 
-This is the essence of antifragility in the epistemic realm. The more we probe and challenge the body of knowledge, the stronger the overall confidence in what remains. Each correction not only fixes a particular false claim, but also increases trust in the mechanism of science itself. In ASB, this process is accelerated and made explicit: every refutation immediately quantifies its impact on credibility scores, and the network graph highlights which other results might be affected. The system thus \emph{benefits from} the very volatility of research outcomes that might trouble a consensus-based approach. Where a consensus system might resist or delay acknowledging a critical refutation (since it must sway the opinions of the majority), ASB incorporates it algorithmically as soon as it is available.
+This is the essence of antifragility in the epistemic realm. The more we probe and challenge the body of knowledge, the stronger the overall confidence in what remains. Each correction not only fixes a particular false claim, but also increases trust in the mechanism of science itself. In ASB, this process is accelerated and made explicit: every refutation immediately quantifies its impact on research fragility scores, and the network graph highlights which other results might be affected. The system thus \emph{benefits from} the very volatility of research outcomes that might trouble a consensus-based approach. Where a consensus system might resist or delay acknowledging a critical refutation (since it must sway the opinions of the majority), ASB incorporates it algorithmically as soon as it is available.
 
 Furthermore, because ASB does not converge on a \emph{declared truth} but always remains open to new evidence, it resists ossification. Even widely accepted theories continue to have high ASB scores not because everyone agrees per se, but because they have accumulated a long chain of supporting evidence and no serious refutations. Should new information arise that challenges them, the system will register it. This keeps science perpetually open to revision, which is exactly as it should be.
 
@@ -419,7 +431,7 @@ Overall, the ASB protocol provides a framework for scientific knowledge that is 
 		\draw[->, thick, red] (D) -- (A) node[midway, right]{\small refutes};
 		\draw[->, thick, green!60!black] (E) -- (D) node[midway, right]{\small supports};
 	\end{tikzpicture}
-	\caption{Example evidence graph fragment. Node A represents an initial claim. Nodes B and C provide supporting evidence for A (green arrows). Node D provides a refuting evidence against A (red arrow). Node E supports the findings of D (i.e., replicates D's refutation of A). In the ASB system, this network of support and refutation relationships would be used to compute credibility scores for each node.}
+	\caption{Example evidence graph fragment. Node A represents an initial claim. Nodes B and C provide supporting evidence for A (green arrows). Node D provides a refuting evidence against A (red arrow). Node E supports the findings of D (i.e., replicates D's refutation of A). In the ASB system, this network of support and refutation relationships would be used to compute fragility scores for each node.}
 	\label{fig:graph}
 \end{figure}
 
