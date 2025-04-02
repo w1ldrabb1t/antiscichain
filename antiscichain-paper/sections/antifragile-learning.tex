@@ -34,17 +34,118 @@ This chapter introduces antifragile learning, a framework where errors are not o
 
 \subsection{The Asymmetry of Failure and the Problem of Ruin}
 
-Not all failures are equal. Some errors are recoverable. Others — especially when scaled — lead to ruin, a catastrophic, irreversible outcome.
+Not all failures are equal. 
 
-To evaluate risk, we must ask:
+Some errors are recoverable. Others — especially when scaled — lead to ruin, a catastrophic, irreversible outcome.
+
+This means that we can't just think about ruin in an isolated way. We need to consider what is the cost of being wrong because, chances are, we might be wrong at along.
+
+\subsubsection{The Cost Of Being Wrong}
+To evaluate this risk, we must ask ourservels:
 
 \begin{itemize}
 	\item \textbf{What is the scale of ruin?} Does the failure impact one person or millions?
-	\item \textbf{What is the impact of that failure?} Minor inconvenience, or existential threat?
-	\item \textbf{What is the complexity of the system involved?} Low-complexity systems (e.g., calculators) fail in predictable ways. High-complexity systems (e.g., human biology, ecosystems) may fail in ways we can’t anticipate.
+	\item \textbf{What is the impact of ruin?} Minor inconvenience, or existential threat?
+	\item \textbf{What is the complexity of the system involved?} Low-complexity predictive systems (e.g., a bug in a software program responsible for sending emails) fail in predictable ways. High-complexity systems (e.g., human biology, ecosystems) may fail in ways we can’t anticipate.
 \end{itemize}
 
-The cost of being wrong in a high-complexity, high-impact context — like a bioengineered drug — is vastly more dangerous than one that fails in a toy problem. 
+The cost of being wrong in a high-complexity, high-impact context — like a bioengineered drug — is vastly more dangerous than one that fails in a way that just poses a slight annoyance - like a toy breaking up. 
+
+So, let's focus, for now, on high-complexity and non-linear systems. This leaves out 2 variables which are the Scale of Ruin and Impact of Ruin.
+
+\begin{center}
+	\begin{tikzpicture}
+		% Draw grid
+		\foreach \x in {0,...,2} {
+			\draw (\x, 0) -- (\x, 2);
+			\draw (0, \x) -- (2, \x);
+		}
+		
+		% Axis labels
+		\node[below] at (1, -0.5) {\textbf{Scale of Ruin}};
+		\node[rotate=90] at (-0.5, 1) {\textbf{Impact of Ruin}};
+		
+		% Cell labels
+		\node at (0.5, 1.5) {\textbf{A}};
+		\node at (1.5, 1.5) {\textbf{B}};
+		\node at (0.5, 0.5) {\textbf{C}};
+		\node at (1.5, 0.5) {\textbf{D}};
+	\end{tikzpicture}
+\end{center}
+
+% Reference list
+\begin{enumerate}
+	\item (A) \textbf{High Impact, Low Scale:} this affects individuals at a small scale. An example here would be you being poisoned by your worst enemy. The ruin impact will be high... for you.
+	\item (B) \textbf{High Impact, High Scale}: this is the worst case scenario. The ruin impact here is high and it's at a high scale, so think, in an extreme case, annihilation at a global scale, say, a nuclear war.
+	\item (C) \textbf{Small Impact, Small Scale}: lowest risk possible... impacting only a few individuals.
+	\item (D) \textbf{Small Impact, High Scale}: here the impact is small but it affects a lot of people... so caution is advised.
+\end{enumerate}
+
+To be clear - we're not prescribing what to do when you are dealing with each of the scenarios of ruin above. All we're trying to do is bring awareness of what quadrant you're in so you can behave accordingly.
+
+\subsubsection{Ruin Exposure as an Innovation Driver}
+
+Not all is bad when we talk about ruin though... Ruin exposure introduces an unexpected twist that is frequently ignored, which is how ruin can be an incredibly powerful driver for innovation. 
+
+Think about this - what is one of the greatest ruin threats to Humanity? War. For centuries, war has been used as an innovation driver to develop advanced technology that can either reduce a country's ruin exposure or increase the threat of ruin to others.
+
+Here's some examples:
+
+\textbf{Cryptography and the Birth of Modern Computing}
+\begin{itemize}
+	\item \textbf{Innovation}: Colossus (1944) – The first programmable digital electronic computer.
+	\item \textbf{Context}: British codebreakers at Bletchley Park, led by Alan Turing and others, built Colossus to break the German Lorenz cipher.
+	\item \textbf{Impact}: Demonstrated the power of automation and programmable logic, inspiring later stored-program computers. \cite{colossus2006}
+\end{itemize}
+
+\textbf{Ballistics and Numerical Computation}
+\begin{itemize}
+	\item \textbf{Innovation}: ENIAC (1945) – Electronic Numerical Integrator and Computer.
+	\item \textbf{Context}: Designed by the U.S. Army for calculating artillery firing tables.
+	\item \textbf{Impact}: First general-purpose electronic computer. Influenced the development of modern computing architectures. \cite{montecarlo2014}
+\end{itemize}
+
+\textbf{Radar and Real-Time Signal Processing}
+\begin{itemize}
+	\item \textbf{Innovation:} Real-time computing, analog-to-digital conversion.
+	\item \textbf{Context}: British and American radar development during WWII.
+	\item \textbf{Impact}: Led to signal processing methods foundational to modern communications, audio/video tech, and sensor data interpretation. \cite{Whirlwind1980}
+\end{itemize}
+
+\textbf{Nuclear Weapons and Simulation}
+\begin{itemize}
+	\item \textbf{Innovation}: Monte Carlo simulations, large-scale numeric simulations.
+	\item \textbf{Context}: Developed at Los Alamos to model nuclear reactions (e.g., Manhattan Project).
+	\item \textbf{Impact}: Core methodology in modern computing—from climate models to AI training \cite{MonteCarloMethod1949}
+\end{itemize}
+
+\textbf{Communications and Networking}
+\begin{itemize}
+	\item \textbf{Innovation}: Packet switching and ARPANET (precursor to the Internet).
+	\item \textbf{Context}: Cold War concern over nuclear survivability of communications.
+	\item \textbf{Impact}: DARPA-funded research led to resilient, decentralized networking—foundational to the Internet. \cite{Leiner2009}
+\end{itemize}
+
+\textbf{Solid-State Electronics}
+\begin{itemize}
+	\item \textbf{Innovation}: Transistors (1947) and integrated circuits (1950s–60s).
+	\item \textbf{Context}: Cold War race for lighter, faster, more durable tech (e.g., for missiles and space).
+	\item \textbf{Impact}: Enabled the transition from room-sized machines to personal computers and mobile tech. \cite{RiordanHoddeson1997}
+\end{itemize}
+
+\textbf{Satellite and GPS Technology}
+\begin{itemize}
+	\item \textbf{Innovation}: Global Positioning System (GPS).
+	\item \textbf{Context}: Cold War-era navigation systems for ballistic missiles and aircraft.
+	\item \textbf{Impact}: Now central to navigation, mapping, mobile apps, and more. \cite{Pace1995}
+\end{itemize}
+
+\textbf{Surveillance and Image Processing}
+\begin{itemize}
+	\item \textbf{Innovation}: Remote sensing, real-time video and pattern recognition.
+	\item \textbf{Context}: Reconnaissance satellites, drone technology, signal intelligence.
+	\item \textbf{Impact}: Advanced imaging, video compression, and early computer vision systems. \cite{Krick1971}
+\end{itemize}
 
 \subsection{Black Swans and the Fragility of Knowledge}
 
