@@ -1,6 +1,6 @@
 # Contributing to Antifragile Science Blockchain (ASB)
 
-Welcome! We are working to create a *falsifiable, decentralized, and censorship-resistant platform and protocol for 
+Welcome! We are working to create a **falsifiable, decentralized, and censorship-resistant platform and protocol for 
 scientific knowledge generation**.
 
 We believe in **building in the open**, and we welcome your contributions—whether you're a scientist, philosopher, engineer, writer, or critic.
