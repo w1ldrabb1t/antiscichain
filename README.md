@@ -1,7 +1,7 @@
 ## An Antifragile Scientific Knowledge Generation Blockchain
 
 - `notes`: notes that I used to create the paper
-- `paper`: my vision for the antifragile blockchain
+- `paper`: my vision for the antifragile blockchain - [latest version](https://github.com/w1ldrabb1t/antiscichain/blob/main/antiscichain-paper/antiscichain-paper.pdf)
 
 We believe in **building in the open**, and we welcome your contributions—whether you're a scientist, philosopher, engineer, writer, or critic.
 
