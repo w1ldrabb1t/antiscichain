@@ -32,16 +32,32 @@ In the pursuit of scientific progress, the goal is not to be right. The goal is 
 
 This chapter introduces antifragile learning, a framework where errors are not only tolerated but essential. Systems that improve when stressed — that benefit from disorder — are antifragile. A scientific system built around this principle must embrace, expose, and even reward its own mistakes. Every failure in science is a potential contribution. Yet, a culture of perfectionism persists: researchers polish their papers, hide their mistakes, and present their results as flawless. This does not reflect reality. No system is perfect. Every theory has edge cases. Every experiment contains assumptions that may not hold across all contexts. To make genuine progress, we must surface errors. Especially in cases where a theory breaks down despite overwhelming evidence of its general correctness. Science advances not by confirming what already works, but by revealing where it doesn't.
 
-\subsection{The Asymmetry of Failure and the Problem of Ruin}
 
-Not all failures are equal. 
 
-Some errors are recoverable. Others — especially when scaled — lead to ruin, a catastrophic, irreversible outcome.
+\subsection{Black Swans and the Fragility of Knowledge}
+
+It only takes one black swan to disprove the claim that “all swans are white.” Likewise, it takes only one refuting case to falsify a scientific theory. Thus, the most valuable scientific contributions may not be those that reinforce existing knowledge, but those that break it. For this reason, knowledge should always be open to be challenged, always tentative in its conclusions. The higher the cost of being wrong, the more important it is to stress-test it.
+
+Antifragile learning does not fear the fragility of errors and mistakes in our knowledge. It wants to expose them and learn from them!
+
+The scientific knowledge being generated needs to be assessed based on:
+\begin{itemize}
+	\item The exposure to ruin if the claim is wrong.
+	\item The complexity of the system in which it operates.
+	\item The number of people affected by its failure.
+\end{itemize}
+
+This gives us a heuristic: prioritize scrutiny for high-risk, high-scale, high-complexity claims — especially those promoted by actors with no downside.
+
+\subsection{Ruin and The Cost of Being Wrong}
+
+In antifragile learning, the goal is not to avoid being wrong — because that’s impossible — but to understand the cost of being wrong.
+
+Mistakes happen. Being wrong is inevitable, especially in the exploration of complex systems. But not all errors are equal. Some are cheap. Others can be catastrophic. Not all failures are equal.  Some errors are recoverable. Others — especially when scaled — lead to ruin, a catastrophic and potentially irreversible outcome.
 
 This means that we can't just think about ruin in an isolated way. We need to consider what is the cost of being wrong because, chances are, we might be wrong at along.
 
-\subsubsection{The Cost Of Being Wrong}
-To evaluate this risk, we must ask ourservels:
+To evaluate this risk, we must ask ourselves:
 
 \begin{itemize}
 	\item \textbf{What is the scale of ruin?} Does the failure impact one person or millions?
@@ -49,9 +65,9 @@ To evaluate this risk, we must ask ourservels:
 	\item \textbf{What is the complexity of the system involved?} Low-complexity predictive systems (e.g., a bug in a software program responsible for sending emails) fail in predictable ways. High-complexity systems (e.g., human biology, ecosystems) may fail in ways we can’t anticipate.
 \end{itemize}
 
-The cost of being wrong in a high-complexity, high-impact context — like a bioengineered drug — is vastly more dangerous than one that fails in a way that just poses a slight annoyance - like a toy breaking up. 
+The cost of being wrong in a high-complexity, high-impact context — like a bioengineered drug — is vastly more dangerous than one that fails in a way that just poses a slight annoyance, say, my email software failing to deliver an email. This is where, what Taleb calls "skin in the game" becomes essential. If I claim a biotech intervention is safe, but I am not exposed to its possible failure — and others are — then I am transferring the cost of being wrong to them. That is unacceptable in an antifragile system.
 
-So, let's focus, for now, on high-complexity and non-linear systems. This leaves out 2 variables which are the Scale of Ruin and Impact of Ruin.
+Let's take a look at the 4 quadrants of ruin:
 
 \begin{center}
 	\begin{tikzpicture}
@@ -81,11 +97,23 @@ So, let's focus, for now, on high-complexity and non-linear systems. This leaves
 	\item (D) \textbf{Small Impact, High Scale}: here the impact is small but it affects a lot of people... so caution is advised.
 \end{enumerate}
 
-To be clear - we're not prescribing what to do when you are dealing with each of the scenarios of ruin above. All we're trying to do is bring awareness of what quadrant you're in so you can behave accordingly.
+To be clear - we're not prescribing \emph{what to do} when you are dealing with each of the scenarios of ruin above. All we're trying to do help you \emph{be aware of what quadrant you're in} so you can adjust accordingly.
 
-\subsubsection{Ruin Exposure as an Innovation Driver}
+Here's what happens when the cost of being wrong is high when dealing with problems in the High Impact, High Scale quadrant.
 
-Not all is bad when we talk about ruin though... Ruin exposure introduces an unexpected twist that is frequently ignored, which is how ruin can be an incredibly powerful driver for innovation. 
+Back in 1958, Mao Zedong, first chairman of the Chinese Communist Party and founder of the People's Republic of China (1893–1976), launched a campaign entitled "The Four Pests Campaign" eliminate 4 pests that were having a massive negative impact: rats, flies, mosquitoes and sparrows.
+
+Sparrows in particular caused an unexpected ruin twist in this story. See, sparrows were targeted because they ate grain seeds and fruits. So, people were encouraged to do everything they could to kill them. The result? Millions of sparrows were killed until they were extinct. Good right? Not quite. 
+
+See the evidence of harm, in complex non-linear systems, doesn't show immediately, but when it does... it can appear in devastating fashion. And so it did. See, sparrows ate insects, including locusts and crop-eating pests. With no sparrows around, insect populations increased dramatically, especially locusts which unleashed massive damage to crops. The result was what is called "The Great Chinese Famine" cause "45 million people (to die). By the early 1960s, the Great Leap Forward was repealed. And yet, even after millions had perished, the disregard for basic scientific principles continued. During the Cultural Revolution (1966-76), mass campaigns led to a uniform agricultural model. The slogan “Take Grain as the Key Link” became gospel, forcing farmers to disregard growing local, appropriate crops in favour of grain. In some areas grain simply would not grow". \cite{China4Pests}
+
+\subsection{Innovation Powered by The Fear of Ruin}
+
+Not all is bad when we talk about ruin though... 
+
+Ruin exposure introduces an unexpected twist that is frequently ignored, which is how ruin can be an incredibly powerful driver for innovation. 
+
+In the previous section we looked at what happens when we ignore the cost of being wrong. In this section, we explore the benefits of what happens when we are not only aware of it but we act on it (to prevent ruin to kill us).
 
 Think about this - what is one of the greatest ruin threats to Humanity? War. For centuries, war has been used as an innovation driver to develop advanced technology that can either reduce a country's ruin exposure or increase the threat of ruin to others.
 
@@ -147,54 +175,6 @@ Here's some examples:
 	\item \textbf{Impact}: Advanced imaging, video compression, and early computer vision systems. \cite{Krick1971}
 \end{itemize}
 
-\subsection{Black Swans and the Fragility of Knowledge}
-
-It only takes one black swan to disprove the claim that “all swans are white.” Likewise, it takes only one refuting case to falsify a scientific theory. Thus, the most valuable scientific contributions may not be those that reinforce existing knowledge, but those that break it. For this reason, knowledge should always be open to be challenged, always tentative in its conclusions. The higher the cost of being wrong, the more important it is to stress-test it.
-
-Antifragile learning does not fear the fragility of errors and mistakes in our knowledge. It wants to expose them and learn from them!
-
-\subsection{Not all research is created equal}
-
-The scientific knowledge being generated needs to be assessed based on:
-\begin{itemize}
-	\item The exposure to ruin if the claim is wrong.
-	\item The complexity of the system in which it operates.
-	\item The number of people affected by its failure.
-\end{itemize}
-
-This gives us a heuristic: prioritize scrutiny for high-risk, high-scale, high-complexity claims — especially those promoted by actors with no downside.
-
-\subsection{The Cost of Being Wrong}
-
-In antifragile learning, the goal is not to avoid being wrong — because that’s impossible — but to understand the cost of being wrong.
-
-Mistakes happen. Being wrong is inevitable, especially in the exploration of complex systems. But not all errors are equal. Some are cheap. Others can be catastrophic. 
-
-The critical insight is this:
-\begin{quote}
-	We do not fear errors by themselves. We fear the cost of errors.
-\end{quote}
-
-When scientists, engineers, or policymakers make decisions, they must assess not just the probability of something go wrong — but what happens if 
-it does go wrong. This is especially true in high-stakes domains like medicine, AI safety, climate systems, and synthetic biology.
-
-This leads us to a vital principle in antifragile thinking: \textbf{The greater the cost of being wrong, the more we must stress-test the claim.}
-
-Errors and mistakes can't be evaluated in a vacuum. We need to understand what is the cost of being wrong. 
-
-We need to evaluate the exposure to ruin in several dimensions:
-
-\begin{itemize}
-	\item \textbf{Scale}: what is the scale of the exposure to ruin? From the micro level (individual) to the macro level (entire populations)
-	\item \textbf{Impact}: what is the severity of the impact? From low-impact (people get sick) to high-impact (people die)
-	\item \textbf{Complexity}: what is the level of complexity of the target system? From low complexity (linear systems) to high complexity (non-linear systems)
-\end{itemize}
-
-We will focus on high complexity systems only, so that leaves us with \textit{scale} and \textit{impact} to be measured.
-If you plot a 4x4 matrix, you will quickly realize that the top right quadrant is the most dangerous and, thus, the one we must be most prepared for: high scale and high impact errors.
-
-Even worse is when the cost of being wrong doesn't fall on the person making the claim. This is where skin in the game becomes essential. If I claim a biotech intervention is safe, but am not exposed to its possible failure — and others are — then I am transferring the cost of being wrong to them. That is unacceptable in an antifragile system.
-
 \section{Scientism is not Science!}
 Ultimately, with this platform, we want to end the Scientism which is heavily based on scientific research being sponsored by for profit companies and organizations.
 
@@ -217,21 +197,20 @@ Despite evidence supporting his theory, the medical community largely rejected h
 References: \cite{Semmelweis2006}
 
 \subsubsection{Thalidomide}
-In the late 1950s and early 1960s, thalidomide was a drug prescribed to pregnant women to alleviate morning sickness. However, it was later discovered that the drug caused severe birth defects, especially
-limb deformities, in newborns. The tragic outcome of thalidomide use highlighted the importance of rigorous testing for drug safety, especially during pregnancy, and led to significant changes in drug
+In the late 1950s and early 1960s, thalidomide was a drug prescribed to pregnant women to alleviate morning sickness. However, it was later discovered that the drug caused severe birth defects, especially limb deformities, in newborns. The tragic outcome of thalidomide use highlighted the importance of rigorous testing for drug safety, especially during pregnancy, and led to significant changes in drug
 regulation and testing protocols.
 
 References: \cite{WGMcbride}
 
 \subsubsection{Diethylstilbestrol}
-Diethylstilbestrol was prescribed to pregnant women from the 1940s to the early 1970s to prevent miscarriages and complications during pregnancy. Decades later, it was found that daughters of these women
-had a higher risk of developing reproductive tract abnormalities and a rare form of vaginal cancer.
+Diethylstilbestrol was prescribed to pregnant women from the 1940s to the early 1970s to prevent miscarriages and complications during pregnancy. Decades later, it was found that daughters of these women had a higher risk of developing reproductive tract abnormalities and a rare form of vaginal cancer.
 
 References: \cite{Diethylstilbestrol2000}
 
-\subsubsection{Fen-Phen}
-Fen-Phen was a combination of two drugs, fenfluramine and phentermine, prescribed for weight loss in the 1990s. It was later discovered that fenfluramine could cause serious heart valve problems and primary
-pulmonary hypertension, leading to the withdrawal of the drug from the market.
+\subsubsection{Fen-Phen \$3.75 billion settlement}
+Fen-Phen was a combination of two drugs, fenfluramine and phentermine, prescribed for weight loss in the 1990s. It was later discovered that fenfluramine could cause serious heart valve problems and primary pulmonary hypertension, leading to the withdrawal of the drug from the market.
+
+"American Home has been forced to set aside \$13.2 billion to resolve fen-phen litigation after failing to win a single case that came to trial over the last four years. That reserve includes the \$3.75 billion national settlement." \cite{FenPhenNYT2002}
 
 References: \cite{Wolff1997}
 
@@ -241,9 +220,34 @@ In April 1955 more than 200 000 children in five Western and mid-Western USA sta
 
 References: \cite{Fitzpatrick2006}
 
+\subsubsection{Hormone Replacement Therapy (HRT) and Cardiovascular Disease}
+
+Hormone Replacement Therapy was widely prescribed to postmenopausal women to alleviate symptoms and was believed to reduce the risk of cardiovascular diseases.
+
+The Women's Health Initiative trial of combined estrogen plus progestin was stopped early when overall health risks, including invasive breast cancer, exceeded benefits. Outstanding issues not previously addressed include characteristics of breast cancers observed among women using hormones and whether diagnosis may be influenced by hormone effects on mammography.
+
+References: \cite{JAMA2003}
+
+\subsubsection{Antioxidant Supplements and Cancer Risk}
+
+Lung cancer and cardiovascular disease are major causes of death in the United States. It has been proposed that carotenoids and retinoids are agents that may prevent these disorders.
+
+After an average of four years of supplementation, the combination of beta carotene and vitamin A had no benefit and may have had an adverse effect on the incidence of lung cancer and on the risk of death from lung cancer, cardiovascular disease, and any cause in smokers and workers exposed to asbestos.
+
+References: \cite{Omenn1996EffectsOA}
+
+\subsubsection{Tuskegee Syphilis Study}
+
+The U.S. Public Health Service (PHS) initiated a study to observe the natural progression of untreated syphilis in African American men, under the guise of providing free healthcare.
+
+In reality, PHS "intentionally withheld effective therapy for forty years against a life-threatening illness in 400 African-American men. In 2010, we learned that the same research group had deliberately infected hundreds of Guatemalans with syphilis and gonorrhea in the 1940s with the goal of developing better methods for preventing these infections. Despite 15 journal articles detailing the results, no physician published a letter criticizing the Tuskegee Study. Informed consent was never sought; instead, PHS researchers deceived the men into thinking they were receiving expert medical care." 
+
+References: \cite{TobinMartin2022}
+
+
 \subsection{Scientific Absolutism Powered by Capitalism}
 
-\subsubsection{The Opioid Epidemic – Purdue Pharma and the Illusion of Safety}
+\subsubsection{The Opioid Epidemic and Purdue Pharma}
 
 Purdue Pharma aggressively marketed OxyContin as a safe, non-addictive painkiller, citing selectively crafted studies and physician testimonials. Internally, however, the company knew about the drug's addictive potential. It used industry-funded research, manipulated scientific claims, and influenced medical guidelines to downplay harm.
 
@@ -261,8 +265,7 @@ Monsanto, now part of Bayer, developed glyphosate (marketed as Roundup) and ensu
 
 But this consensus was shaped by ghostwriting studies that appeared independent but were actually drafted by Monsanto; suppressing dissenting research and attacking independent scientists who raised concerns.
 
-In 2015, the World Health Organization’s International Agency for Research on Cancer (IARC) classified glyphosate as "probably carcinogenic to humans." Thousands of lawsuits followed, and Bayer has since 
-paid billions in settlements.
+In 2015, the World Health Organization’s International Agency for Research on Cancer (IARC) classified glyphosate as "probably carcinogenic to humans." Thousands of lawsuits followed, and Bayer has since  paid billions in settlements.
 
 This case exemplifies how scientific absolutism, powered by capital, can become a shield for harm. Consensus was not evidence of truth — it was the product of sustained influence.
 
@@ -272,18 +275,13 @@ This case exemplifies how scientific absolutism, powered by capital, can become 
 
 \subsubsection{Theranos – The Cult of Proof Without Validation}
 
-Theranos, the biotech startup founded by Elizabeth Holmes, promised revolutionary blood testing using a
-single drop of blood. Investors, media, and even regulatory bodies were convinced — not by open
-peer-reviewed research, but by carefully curated internal “proof”.
+Theranos, the biotech startup founded by Elizabeth Holmes, promised revolutionary blood testing using a single drop of blood. Investors, media, and even regulatory bodies were convinced — not by open peer-reviewed research, but by carefully curated internal “proof”.
 
 Behind the scenes devices didn't work, test results were unreliable and potentially dangerous and employees who spoke out were silenced or retaliated against.
 
-Theranos thrived in a system where credibility was built through branding and controlled narratives, not 
-scientific falsifiability. It wasn't until whistleblowers and investigative journalists exposed the fraud
-that the collapse occurred.
+Theranos thrived in a system where credibility was built through branding and controlled narratives, not scientific falsifiability. It wasn't until whistleblowers and investigative journalists exposed the fraud that the collapse occurred.
 
-Theranos shows what happens when the appearance of science is weaponized — and when those in charge face
-zero downside if they’re wrong.
+Theranos shows what happens when the appearance of science is weaponized — and when those in charge face zero downside if they’re wrong.
 
 \cite{USvsHolmes2022}
 \cite{buzzfeednews2018}
