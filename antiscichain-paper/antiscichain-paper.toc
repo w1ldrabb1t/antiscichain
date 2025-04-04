@@ -1,52 +1,53 @@
-\contentsline {section}{\numberline {1}Introduction}{5}{section.1}%
-\contentsline {section}{\numberline {2}Knowledge is Fragile}{6}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Absence of evidence vs evidence of absense}{6}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Fooled by Randomness (an example of survivor bias)}{6}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Trust me - it works for me, right here, right now}{7}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Knowledge is useless - learning is everything!}{8}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}So what?}{8}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Antifragile Learning}{9}{section.3}%
-\contentsline {subsection}{\numberline {3.1}What is Antifragile Learning}{9}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}What is unique about this approach}{9}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Seeking Truth Over Being Right}{10}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Black Swans and the Fragility of Knowledge}{10}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Ruin and The Cost of Being Wrong}{10}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Innovation Powered by The Fear of Ruin}{12}{subsection.3.6}%
-\contentsline {section}{\numberline {4}Scientism is not Science!}{14}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Iatrogenisis or Iatrogenics}{14}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Ignaz Semmelweis and Handwashing}{14}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}Thalidomide}{15}{subsubsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.3}Diethylstilbestrol}{15}{subsubsection.4.1.3}%
-\contentsline {subsubsection}{\numberline {4.1.4}Fen-Phen \$3.75 billion settlement}{15}{subsubsection.4.1.4}%
-\contentsline {subsubsection}{\numberline {4.1.5}The polio vaccine (IPV) and The Cutter Incident in 1955}{15}{subsubsection.4.1.5}%
-\contentsline {subsubsection}{\numberline {4.1.6}Hormone Replacement Therapy (HRT) and Cardiovascular Disease}{16}{subsubsection.4.1.6}%
-\contentsline {subsubsection}{\numberline {4.1.7}Antioxidant Supplements and Cancer Risk}{16}{subsubsection.4.1.7}%
-\contentsline {subsubsection}{\numberline {4.1.8}Tuskegee Syphilis Study}{16}{subsubsection.4.1.8}%
-\contentsline {subsection}{\numberline {4.2}Scientific Absolutism Powered by Capitalism}{17}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}The Opioid Epidemic and Purdue Pharma}{17}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Glyphosate and Monsanto – “No Evidence of Harm” as a Weapon}{17}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Theranos – The Cult of Proof Without Validation}{17}{subsubsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.3}To sum it up}{18}{subsection.4.3}%
-\contentsline {section}{\numberline {5}The Antifragile Science Blockchain - ASB}{19}{section.5}%
-\contentsline {subsection}{\numberline {5.1}The Critical Role of the Blockchain}{19}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Radical Transparency}{19}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Full Immutability}{19}{subsubsection.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.3}Censorship Resistance}{19}{subsubsection.5.1.3}%
-\contentsline {subsubsection}{\numberline {5.1.4}Trustless}{19}{subsubsection.5.1.4}%
-\contentsline {subsubsection}{\numberline {5.1.5}Distributed}{20}{subsubsection.5.1.5}%
-\contentsline {subsubsection}{\numberline {5.1.6}Open}{20}{subsubsection.5.1.6}%
-\contentsline {subsection}{\numberline {5.2}Please break me - if you can}{20}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Knowledge Via Negativa}{21}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Skin in the Game for the Research}{22}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Consensus is Irrelevant (and potentially misleading!)}{22}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}What fools me, makes us all smarter (and antifragile)}{23}{subsection.5.6}%
-\contentsline {section}{\numberline {6}Technical Section}{25}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Graph Model}{25}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Evidence Fragility Score (EFS) algorithm}{26}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}How It Works}{26}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Research Object Fields}{27}{subsubsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.3}Validation Score}{27}{subsubsection.6.2.3}%
-\contentsline {subsubsection}{\numberline {6.2.4}Antifragile Funding Score}{28}{subsubsection.6.2.4}%
-\contentsline {subsubsection}{\numberline {6.2.5}Antifragile Ruin Score}{28}{subsubsection.6.2.5}%
-\contentsline {subsubsection}{\numberline {6.2.6}The EFS Algorithm}{28}{subsubsection.6.2.6}%
-\contentsline {section}{\numberline {7}Conclusion}{29}{section.7}%
+\contentsline {section}{\numberline {1}Inspiration}{6}{section.1}%
+\contentsline {section}{\numberline {2}Introduction}{7}{section.2}%
+\contentsline {section}{\numberline {3}Knowledge is Fragile}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Absence of evidence vs evidence of absense}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Fooled by Randomness (an example of survivor bias)}{9}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Trust me - it works for me, right here, right now}{9}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Knowledge is useless - learning is everything!}{10}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}So what?}{10}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Antifragile Learning}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}What is Antifragile Learning}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}What is unique about this approach}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Seeking Truth Over Being Right}{12}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Black Swans and the Fragility of Knowledge}{12}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Ruin and The Cost of Being Wrong}{12}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Innovation Powered by The Fear of Ruin}{14}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Scientism is not Science!}{16}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Iatrogenisis or Iatrogenics}{16}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Ignaz Semmelweis and Handwashing}{16}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Thalidomide}{17}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Diethylstilbestrol}{17}{subsubsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.4}Fen-Phen \$3.75 billion settlement}{17}{subsubsection.5.1.4}%
+\contentsline {subsubsection}{\numberline {5.1.5}The polio vaccine (IPV) and The Cutter Incident in 1955}{17}{subsubsection.5.1.5}%
+\contentsline {subsubsection}{\numberline {5.1.6}Hormone Replacement Therapy (HRT) and Cardiovascular Disease}{18}{subsubsection.5.1.6}%
+\contentsline {subsubsection}{\numberline {5.1.7}Antioxidant Supplements and Cancer Risk}{18}{subsubsection.5.1.7}%
+\contentsline {subsubsection}{\numberline {5.1.8}Tuskegee Syphilis Study}{18}{subsubsection.5.1.8}%
+\contentsline {subsection}{\numberline {5.2}Scientific Absolutism Powered by Capitalism}{19}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}The Opioid Epidemic and Purdue Pharma}{19}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Glyphosate and Monsanto – “No Evidence of Harm” as a Weapon}{19}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Theranos – The Cult of Proof Without Validation}{19}{subsubsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.3}To sum it up}{20}{subsection.5.3}%
+\contentsline {section}{\numberline {6}The Antifragile Science Blockchain - ASB}{21}{section.6}%
+\contentsline {subsection}{\numberline {6.1}The Critical Role of the Blockchain}{21}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Radical Transparency}{21}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Full Immutability}{21}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}Censorship Resistance}{21}{subsubsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.4}Trustless}{21}{subsubsection.6.1.4}%
+\contentsline {subsubsection}{\numberline {6.1.5}Distributed}{22}{subsubsection.6.1.5}%
+\contentsline {subsubsection}{\numberline {6.1.6}Open}{22}{subsubsection.6.1.6}%
+\contentsline {subsection}{\numberline {6.2}Please break me - if you can}{22}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Knowledge Via Negativa}{23}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Skin in the Game for the Research}{24}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Consensus is Irrelevant (and potentially misleading!)}{24}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}What fools me, makes us all smarter (and antifragile)}{25}{subsection.6.6}%
+\contentsline {section}{\numberline {7}Technical Section}{27}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Graph Model}{27}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Evidence Fragility Score (EFS) algorithm}{28}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}How It Works}{28}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Research Object Fields}{29}{subsubsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.3}Validation Score}{29}{subsubsection.7.2.3}%
+\contentsline {subsubsection}{\numberline {7.2.4}Antifragile Funding Score}{30}{subsubsection.7.2.4}%
+\contentsline {subsubsection}{\numberline {7.2.5}Antifragile Ruin Score}{30}{subsubsection.7.2.5}%
+\contentsline {subsubsection}{\numberline {7.2.6}The EFS Algorithm}{30}{subsubsection.7.2.6}%
+\contentsline {section}{\numberline {8}Conclusion}{31}{section.8}%
