@@ -1,17 +1,54 @@
 ## An Antifragile Scientific Knowledge Generation Blockchain
 
-- `notes`: notes that I used to create the paper
-- `paper`: my vision for the antifragile blockchain - [latest version](https://github.com/w1ldrabb1t/antiscichain/blob/main/antiscichain-paper/antiscichain-paper.pdf)
+Hi, I'm Bruno.
 
-We believe in **building in the open**, and we welcome your contributions—whether you're a scientist, philosopher, engineer, writer, or critic.
+I am creating the *AntifragileSciChain* - an antifragile scientific knowledge generation system which leverages the blockchain technology.
 
-> This is not just a paper. It’s a living system. Help us test it, evolve it, or even tear it down and rebuild something better.
+The novelty about my system, which I describe on the [paper](https://github.com/w1ldrabb1t/antiscichain/blob/main/antiscichain-paper/antiscichain-paper.pdf), is the creation of a network of research papers with 2 types of lists and the creation of a Evidence Fragility Score (EFS).
+
+Every research published in the AntifragileSciChain has 2 linked lists:
+- list of papers that this paper supports/confirms
+- list of papers that this paper refutes/invalidates
+
+These 2 linked lists might seem trivial but they unlock the ability for the system to measure how fragile is the evidence that supports the validaty of a certian research paper, by recursively iterating through both lists and calculate the EFS score.
+
+Modern scientific research is often times heavily focused on finding evidence that something works (confirmation bias) or finding evidence that there's no harm (mistaking absence of evidence with evidence of absense), which is especially dangerous when dealing with complex non-linear response systems which render those "findings" very fragile. 
+
+Scientism-driven research which is funded by private capitalist companies to find proof that their products work and that are "harmless", while silencing and banning those who challenge their findings, make it so that professional science researchers end up accepting these "studies" since it's rare and hard to find funding to "proof that something doesn't work" or to "refute another research paper".
+
+I am creating the *AntifragileSciChain* to break free from Scientism and from the centralized authority-based organizastions that get to decide what research is valid and can be published and which ones are not.
+
+Here's what makes the *AntifragileSciChain* so unique:
+- it is truly open because it's not only open source but also anyone can publish on it
+- it is immutable meaning that nobody can change a research node on the network (it stays on the chain forever!)
+- it is decentralized which makes it impossible for it to be taken down or to be controled by one entity or organization
+- it relies on the EFS score to expose a fragility signal based on other reserch nodes on the network
+- the EFS score algorithm gives more weight to refutations than confirmations and also adjusts itself based on the cost of being wrong (ruin 
+exposure)
+
+In a nutshell, the *AntifragileSciChain* is a kind of a "Black Swan" to the modern scientific establishment in the way that it aims to set the scientific method free from the hands of Scientism and centralized scientifc authority based organizations, because it changes things. 
+
+Join me! 
+
+Review the paper and share your comments.
+
+Contribute with more references and bibliography.
+
+Find weaknesses and fragility in my work.
+
+Let's make science antifragile!
+
+Love,
+Bruno 
 
 ---
 
-##  Paper Structure
+## Repo Structure
 
-The paper `antiscichain-paper.tex` is broken into modular LaTeX files inside `/paper/sections/`.
+- `notes`: notes that I used to create the paper
+- `paper`: my vision for the antifragile blockchain - [latest version](https://github.com/w1ldrabb1t/antiscichain/blob/main/antiscichain-paper/antiscichain-paper.pdf)
+
+The actual paper is in the file `antiscichain-paper.tex` and it's broken into modular LaTeX files inside `/paper/sections/`.
 
 The key section about the Antifragile Science Blockchain is at `/paper/sections/asb/asb.tex`.
 From there you will see the subsections for it.
@@ -25,14 +62,12 @@ Please open an Issue if you think there's a missing section.
 
 ## Contribution Philosophy
 
-Please challenge ideas that are weak or vague. 
-
 Contributions are welcome if they:
 - Increase **falsifiability**
 - Improve **clarity**
 - Strengthen the system by **testing its limits and finding errors or mistakes**
 
-If you’re not sure whether your idea “fits,” **open a Draft PR or a Discussion** and we’ll figure it out together.
+If you’re not sure whether your idea “fits”, **open a new Discussion** and we’ll figure it out together.
 
 ---
 
