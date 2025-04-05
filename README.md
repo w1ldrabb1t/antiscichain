@@ -10,7 +10,7 @@ Every research published in the AntifragileSciChain has 2 linked lists:
 - list of papers that this paper supports/confirms
 - list of papers that this paper refutes/invalidates
 
-These 2 linked lists might seem trivial but they unlock the ability for the system to measure how fragile is the evidence that supports the validaty of a certian research paper, by recursively iterating through both lists and calculate the EFS score.
+These 2 linked lists might seem trivial but they unlock the ability for the system to measure how fragile is the evidence that supports the validity of a certain research paper, by recursively iterating through both lists and calculate the EFS score.
 
 Modern scientific research is often times heavily focused on finding evidence that something works (confirmation bias) or finding evidence that there's no harm (mistaking absence of evidence with evidence of absense), which is especially dangerous when dealing with complex non-linear response systems which render those "findings" very fragile. 
 
@@ -21,10 +21,9 @@ I am creating the *AntifragileSciChain* to break free from Scientism and from th
 Here's what makes the *AntifragileSciChain* so unique:
 - it is truly open because it's not only open source but also anyone can publish on it
 - it is immutable meaning that nobody can change a research node on the network (it stays on the chain forever!)
-- it is decentralized which makes it impossible for it to be taken down or to be controled by one entity or organization
-- it relies on the EFS score to expose a fragility signal based on other reserch nodes on the network
-- the EFS score algorithm gives more weight to refutations than confirmations and also adjusts itself based on the cost of being wrong (ruin 
-exposure)
+- it is decentralized which makes it impossible for it to be taken down or to be controlled by one entity or organization
+- it relies on the EFS score to expose a fragility signal based on other research nodes on the network
+- the EFS score algorithm gives more weight to refutations than confirmations and also adjusts itself based on the cost of being wrong (ruin exposure)
 
 In a nutshell, the *AntifragileSciChain* is a kind of a "Black Swan" to the modern scientific establishment in the way that it aims to set the scientific method free from the hands of Scientism and centralized scientifc authority based organizations, because it changes things. 
 
