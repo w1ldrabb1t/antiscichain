@@ -1,3 +1,8 @@
+## v0.4.3 - 2025-04-05
+- readme typos
+- new title and versioning
+- minor fix to the version in the pdf
+
 ## v0.4.2 - 2025-04-05
 - added a new intro to the README
 - minor fix to the preamble and abstract
