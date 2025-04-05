@@ -16,7 +16,7 @@ Modern scientific research is often times heavily focused on finding evidence th
 
 Scientism-driven research which is funded by private capitalist companies to find proof that their products work and that are "harmless", while silencing and banning those who challenge their findings, make it so that professional science researchers end up accepting these "studies" since it's rare and hard to find funding to "proof that something doesn't work" or to "refute another research paper".
 
-I am creating the *AntifragileSciChain* to break free from Scientism and from the centralized authority-based organizastions that get to decide what research is valid and can be published and which ones are not.
+I am creating the *AntifragileSciChain* to break free from Scientism and from the centralized authority-based organizations that get to decide what research is valid and can be published and which ones are not.
 
 Here's what makes the *AntifragileSciChain* so unique:
 - it is truly open because it's not only open source but also anyone can publish on it
