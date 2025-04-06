@@ -74,6 +74,34 @@ if [ "$SILENT" = false ]; then
   fi
 fi
 
+# --- Update version in LaTeX footer ---
+TEX_FILE="./antiscichain-paper/antiscichain-paper.tex"
+
+# Replace the version in the \lfoot line
+sed -E -i "s/(\\\lfoot\{\\\textbf\{Version )[^}]+(\}\})/\1$VERSION\2/" "$TEX_FILE"
+
+# Show the updated line to the user (unless silent)
+if [ "$SILENT" = false ]; then
+  echo ""
+  echo "Updated LaTeX version line:"
+  grep "textbf{Version" "$TEX_FILE"
+  echo ""
+
+  if [ "$FORCE" = false ]; then
+    echo -n "Does the version line look correct? (Y/n): "
+    read -r CONFIRM_LATEX
+    if [[ "$CONFIRM_LATEX" != "Y" ]]; then
+      echo "Aborting release. LaTeX version not confirmed."
+      exit 1
+    fi
+  fi
+fi
+
+# Commit the change
+git add "$TEX_FILE"
+git commit -m "#fix updated version footer to $VERSION"
+
+
 # --- Tag the new version ---
 git tag -a "$VERSION" -m "Release $VERSION"
 git push origin "$VERSION"
