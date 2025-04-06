@@ -1,3 +1,7 @@
+## v0.5 - 2025-04-06
+- added the challenge of reproducibility
+- small typo on README
+
 ## v0.4.3 - 2025-04-05
 - readme typos
 - new title and versioning
