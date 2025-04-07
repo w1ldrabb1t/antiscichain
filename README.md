@@ -35,6 +35,8 @@ Contribute with more references and bibliography.
 
 Find weaknesses and fragility in my work.
 
+Drop by the [Discord](https://discord.gg/AW4Cxr3ajA).
+
 Let's make science antifragile!
 
 Love,
@@ -66,7 +68,7 @@ Contributions are welcome if they:
 - Improve **clarity**
 - Strengthen the system by **testing its limits and finding errors or mistakes**
 
-If you’re not sure whether your idea “fits”, **open a new Discussion** and we’ll figure it out together.
+If you’re not sure where to start, drop by the [Discord](https://discord.gg/AW4Cxr3ajA).
 
 ---
 
